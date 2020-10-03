@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>Array - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter active">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    Array - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#array">Array</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#创建数组--">创建数组  </a></li>
+<li class="toc-entry toc-h2"><a href="#length属性--">length属性  </a></li>
+<li class="toc-entry toc-h2"><a href="#检测数组--">检测数组  </a></li>
+<li class="toc-entry toc-h2"><a href="#转换方法--">转换方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#栈方法lifo--">栈方法LIFO  </a></li>
+<li class="toc-entry toc-h2"><a href="#队列方法fifo--">队列方法FIFO  </a></li>
+<li class="toc-entry toc-h2"><a href="#重排序方法--">重排序方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#操作方法--">操作方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#位置方法--">位置方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#迭代方法--">迭代方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#归并方法--">归并方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#常见算法--">常见算法  </a></li>
+</ul>
+</li>
+</ul><h1 id="array">
+<a class="anchor" href="#array" aria-hidden="true"><span class="octicon octicon-link"></span></a>Array</h1>
+
+<h2 id="创建数组--">
+<a class="anchor" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E7%BB%84--" aria-hidden="true"><span class="octicon octicon-link"></span></a>创建数组  <a id="create"></a>
+</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// 创建一个length=3的数组</span>
+  <span class="kd">var</span> <span class="nx">names</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">c</span><span class="dl">"</span><span class="p">)</span> <span class="c1">// 创建包含这三项的数组</span>
+  <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">c</span><span class="dl">"</span><span class="p">]</span> <span class="c1">// 字面量表示法，与Object一样，字面量不会调用Array()构造函数</span>
+</code></pre></div></div>
+
+<h2 id="length属性--">
+<a class="anchor" href="#length%E5%B1%9E%E6%80%A7--" aria-hidden="true"><span class="octicon octicon-link"></span></a>length属性  <a id="length"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>不是只读的，设置length可以从数组的末尾移除项或添加新项，新项的值未赋予时是<code class="language-plaintext highlighter-rouge">ubdefined</code>；</p>
+
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">pink</span><span class="dl">"</span><span class="p">]</span>
+<span class="nx">colors</span><span class="p">[</span><span class="nx">colors</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">black</span><span class="dl">"</span>  <span class="c1">// 在末尾添加新项</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="检测数组--">
+<a class="anchor" href="#%E6%A3%80%E6%B5%8B%E6%95%B0%E7%BB%84--" aria-hidden="true"><span class="octicon octicon-link"></span></a>检测数组  <a id="detecting-arrays"></a>
+</h2>
+
+<ul>
+  <li>只有一个全局执行环境时 <code class="language-plaintext highlighter-rouge">if(arr instanceof Array){}</code>；</li>
+  <li>ES5新增可以不考虑多个全局执行环境，<code class="language-plaintext highlighter-rouge">if(Array.isArray(arr)){}</code>；</li>
+</ul>
+
+<h2 id="转换方法--">
+<a class="anchor" href="#%E8%BD%AC%E6%8D%A2%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>转换方法  <a id="conversions"></a>
+</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="kc">undefined</span><span class="p">,</span> <span class="kc">null</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">toLocaleString</span><span class="p">())</span> <span class="c1">// a,b,c</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span>       <span class="c1">// a,b,c</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">())</span>        <span class="c1">// ["a", "b", "c"]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr1</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span>     <span class="c1">// a,,</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="dl">'</span><span class="s1">-&gt;</span><span class="dl">'</span><span class="p">))</span>      <span class="c1">// a-&gt;b-&gt;cf</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">join</code> 方法可重现 <code class="language-plaintext highlighter-rouge">toString</code> 的返回值，如果不给 <code class="language-plaintext highlighter-rouge">join</code> 传任何值，或传入 <code class="language-plaintext highlighter-rouge">undefined</code>，默认使用逗号作为分隔符；</li>
+  <li>如果数组的某一项是 <code class="language-plaintext highlighter-rouge">undefined</code> 或 <code class="language-plaintext highlighter-rouge">null</code>，<code class="language-plaintext highlighter-rouge">toString</code> 、<code class="language-plaintext highlighter-rouge">join</code> 和 <code class="language-plaintext highlighter-rouge">toLocaleString</code> 返回的结果中以空字符串表示；</li>
+</ul>
+
+<h2 id="栈方法lifo--">
+<a class="anchor" href="#%E6%A0%88%E6%96%B9%E6%B3%95lifo--" aria-hidden="true"><span class="octicon octicon-link"></span></a>栈方法LIFO  <a id="lifo"></a>
+</h2>
+
+<p>栈，后进先出（Last-In-First-Out）</p>
+
+<ul>
+  <li>
+<strong>push()</strong>：往数组末尾推入任意个项，返回修改后的数组 <code class="language-plaintext highlighter-rouge">length</code>；</li>
+  <li>
+<strong>pop()</strong>：移除数组末尾一项，数组 <code class="language-plaintext highlighter-rouge">length</code>减1，返回移除的项；</li>
+</ul>
+
+<h2 id="队列方法fifo--">
+<a class="anchor" href="#%E9%98%9F%E5%88%97%E6%96%B9%E6%B3%95fifo--" aria-hidden="true"><span class="octicon octicon-link"></span></a>队列方法FIFO  <a id="fifo"></a>
+</h2>
+
+<p>队列，先进先出（First-In-First-Out），队列在列表末端添加项（已有 <code class="language-plaintext highlighter-rouge">push</code> 方法），从列队前端移除项</p>
+
+<ul>
+  <li>
+<strong>shift()</strong>：移除数组第一项，数组 <code class="language-plaintext highlighter-rouge">length</code> 减1，返回移除的项；</li>
+  <li>
+<strong>unshift()</strong>：在数组前端添加任意个项，返回新数组的 <code class="language-plaintext highlighter-rouge">length</code>；</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">arr.unshift('red','pink')</code>，参数应视为整体添加到前端；</p>
+
+<h2 id="重排序方法--">
+<a class="anchor" href="#%E9%87%8D%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>重排序方法  <a id="reorder"></a>
+</h2>
+
+<ul>
+  <li>
+<strong>reverse()</strong>：翻转数组顺序，倒序 1,2,3,4,5 =&gt; 5,4,3,2,1；</li>
+  <li>
+<strong>sort()</strong>：无参数时，每项调用 <code class="language-plaintext highlighter-rouge">toString()</code>，按升序排列，非常不好用，因此可以接受一个比较函数作为参数，比较函数接收2个参数，如果参数一应该位于参数2之前返回一个负数，相等返回0，应位于参数2之后返回正数；</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+<span class="kd">function</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">v1</span> <span class="o">&lt;</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">v1</span> <span class="o">&gt;</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">1</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">0</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// 比较数值类型的可简化</span>
+<span class="kd">function</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">return</span> <span class="nx">v1</span><span class="o">-</span><span class="nx">v2</span> <span class="c1">//升序 v2-v1降序</span>
+<span class="p">}</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">compare</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="c1">// [1,2,19,23]</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<strong>reverse()</strong>和<strong>sort()</strong>返回值都是排序后的数组（修改原数组）；</li>
+</ul>
+
+<h2 id="操作方法--">
+<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>操作方法  <a id="manipulation"></a>
+</h2>
+
+<ul>
+  <li>
+<strong>concat()</strong>：基于当前数组的所有项创建一个<strong>新数组</strong>（不修改原数组），先创建当前数组的一个副本，然后将接收的参数添加到副本的末尾，如果参数是一或多个数组，则将这些数组的每一项添加副本末尾，即合并数组；</li>
+  <li>
+<strong>slice()</strong>：基于当前数组的一或多个项创建一个<strong>新数组</strong>（不修改原数组），可接受1-2个参数，即要返回项的起始和结束位置，只有一个参数返回从指定位置到末尾所有项，2个参数返回起始位置到结束位置之间的项（但不包括结束位置），任何不合法的参数都返回空数组，如果结束位置大于最大索引，则等同于只有一个参数；</li>
+  <li>
+<strong>splice()</strong>：向数组中部插入、删除、替换项，并返回一个包含从原数组中删除的项数组（如没有删除则返回空数组），该方法会修改原数组，简单理解为3个参数 （起始位置，要删除的项数，要插入的项）；
+    <ul>
+      <li>删除：删除任意数量的项，2个参数 （起始位置索引，删除项数）；</li>
+      <li>插入：向指定位置插入任意数量的项，3个参数（起始位置，0(即要删除的项数)，要插入的项）；</li>
+      <li>替换：向指定位置 插入数量的项并同时删除任意数量的项，3个参数（起始位置，要删除的项数，要插入的任意数量的项）；</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// concat</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">concat_arr</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">x</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">y</span><span class="dl">'</span><span class="p">])</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>         <span class="c1">// ["a", "b", "c"]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">concat_arr</span><span class="p">)</span>  <span class="c1">// ["a", "b", "c", "red", "x", "y"]</span>
+
+<span class="c1">// slice</span>
+<span class="kd">var</span> <span class="nx">brr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">aa</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bb</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">cc</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">dd</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ee</span><span class="dl">'</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">slice_arr1</span> <span class="o">=</span> <span class="nx">brr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>     <span class="c1">// ["dd", "ee"]</span>
+<span class="kd">var</span> <span class="nx">slice_arr2</span> <span class="o">=</span> <span class="nx">brr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>   <span class="c1">// ["bb", "cc"]</span>
+<span class="kd">var</span> <span class="nx">slice_arr3</span> <span class="o">=</span> <span class="nx">brr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// slice(arr.length+(-3), arr.length+(-2))  ["cc"]</span>
+<span class="kd">var</span> <span class="nx">slice_arr4</span> <span class="o">=</span> <span class="nx">brr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>   <span class="c1">// ["dd", "ee"]</span>
+<span class="kd">var</span> <span class="nx">slice_arr5</span> <span class="o">=</span> <span class="nx">brr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>   <span class="c1">// []</span>
+
+<span class="c1">// splice</span>
+<span class="kd">var</span> <span class="nx">crr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">xx</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">yy</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">zz</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">jj</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">kk</span><span class="dl">'</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">removed</span> <span class="o">=</span> <span class="nx">crr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">crr</span><span class="p">)</span>    <span class="c1">// ["xx", "zz", "jj", "kk"]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">removed</span><span class="p">)</span> <span class="c1">// ["yy"]</span>
+
+<span class="nx">removed</span> <span class="o">=</span> <span class="nx">crr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">crr</span><span class="p">)</span>     <span class="c1">// ["a", "b", "xx", "zz", "jj", "kk"]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">removed</span><span class="p">)</span> <span class="c1">// []</span>
+
+<span class="nx">removed</span> <span class="o">=</span> <span class="nx">crr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="dl">'</span><span class="s1">m</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">n</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">crr</span><span class="p">)</span>     <span class="c1">// ["m", "n", "xx", "zz", "jj", "kk"]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">removed</span><span class="p">)</span> <span class="c1">// ["a", "b"]</span>
+</code></pre></div></div>
+
+<h2 id="位置方法--">
+<a class="anchor" href="#%E4%BD%8D%E7%BD%AE%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>位置方法  <a id="location"></a>
+</h2>
+
+<ul>
+  <li>
+<strong>indexOf()</strong>：2个参数，要查找的项和查找起点索引(可选)，从数组开头开始向后；</li>
+  <li>
+<strong>lastIndexOf()</strong>：同上，从数组末尾开始向前查找；</li>
+</ul>
+
+<p>两个方法都返回查找项的索引，如果没找到返回 <code class="language-plaintext highlighter-rouge">-1</code>，查找的项必须严格相等（<code class="language-plaintext highlighter-rouge">===</code>）严格相等时注意对象就算字面量一样如果引用不一样也不行。</p>
+
+<h2 id="迭代方法--">
+<a class="anchor" href="#%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>迭代方法  <a id="iteration"></a>
+</h2>
+
+<p>ES5定义了5个迭代方法，每个方法接收2个参数， 要在每项上运行的函数 <code class="language-plaintext highlighter-rouge">function(item, index, array){}</code> 和运行该函数的作用域对象(可选)——影响 <code class="language-plaintext highlighter-rouge">this</code> 的值。</p>
+
+<ul>
+  <li>
+<strong>every()</strong>：对每一项运行给定函数，如果该函数对每一项都返回 <code class="language-plaintext highlighter-rouge">true</code>，则返回 <code class="language-plaintext highlighter-rouge">true</code>；</li>
+  <li>
+<strong>filter()</strong>：对每一项运行给定函数，最后返回该函数会返回 <code class="language-plaintext highlighter-rouge">true</code> 的项组成的数组；</li>
+  <li>
+<strong>forEach()</strong>：对每一项运行给定函数，该方法没有返回值；</li>
+  <li>
+<strong>map()</strong>：对每一项运行给定函数，返回每次函数调用的 <code class="language-plaintext highlighter-rouge">return</code> 的结果组成的数组；</li>
+  <li>
+<strong>some()</strong>：对每一项运行给定函数，如果该函数对任一项返回 <code class="language-plaintext highlighter-rouge">true</code>，则返回 <code class="language-plaintext highlighter-rouge">true</code>；</li>
+</ul>
+
+<p>以上方法都不会修改数组中包含的值,，如果项是<strong>对象可以修改属性</strong>。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">];</span>
+
+<span class="kd">var</span> <span class="nx">everyResult</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">every</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">item</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">});</span> <span class="c1">// false</span>
+
+<span class="kd">var</span> <span class="nx">someResult</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">some</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">item</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">});</span> <span class="c1">// true</span>
+
+<span class="kd">var</span> <span class="nx">filterResult</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">item</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">});</span> <span class="c1">// [3, 4, 5, 4, 3]</span>
+
+<span class="kd">var</span> <span class="nx">mapResult</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">item</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">});</span> <span class="c1">// [2, 4, 6, 8, 10, 8, 6, 4, 2]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// 执行某些操作，但不会修改数组</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h2 id="归并方法--">
+<a class="anchor" href="#%E5%BD%92%E5%B9%B6%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>归并方法  <a id="reduction"></a>
+</h2>
+
+<p>ES5新增了两个归并数组的方法，这两个方法都会迭代所有项，然后构建一个最终返回值，都接收两个参数，要在每一项上调用的函数 <code class="language-plaintext highlighter-rouge">function(prev,cur,index,array){}</code>，作为归并基础的初始值(可选)，给定函数返回的任何值都会作为第一个参数 <code class="language-plaintext highlighter-rouge">prev</code> 自动传给下一项，第一次迭代发生在数组第二项，如果设置了初始值则从第一项开始迭代。</p>
+
+<ul>
+  <li>
+<strong>reduce()</strong>：从第一项开始逐个遍历到最后；</li>
+  <li>
+<strong>reduceRIght()</strong>：从最后一项开始，向前遍历到第一项；</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">prev</span><span class="p">,</span> <span class="nx">curr</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="k">return</span> <span class="nx">prev</span><span class="o">+</span><span class="nx">curr</span>
+<span class="p">},</span><span class="mi">10</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="c1">// 25 如果不加初始值10则结果15</span>
+</code></pre></div></div>
+
+<h2 id="常见算法--">
+<a class="anchor" href="#%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>常见算法  <a id="algorithm"></a>
+</h2>
+
+<ul>
+  <li><strong>二分排序</strong></li>
+  <li><strong>冒泡排序</strong></li>
+  <li><strong>插入排序</strong></li>
+  <li><strong>选择排序</strong></li>
+  <li><strong>归并排序</strong></li>
+  <li><strong>希尔排序</strong></li>
+  <li><strong>快速排序</strong></li>
+  <li><strong>堆排序</strong></li>
+  <li><strong>基数排序</strong></li>
+  <li><strong>桶排序</strong></li>
+</ul>
+
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/reference/README.html" class="navigation navigation-prev" aria-label="Previous page: 引用类型"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/reference/object.html" class="navigation navigation-next" aria-label="Next page: Object"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

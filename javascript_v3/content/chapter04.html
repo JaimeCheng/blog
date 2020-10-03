@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>4. 变量、作用域和内存问题 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    4. 变量、作用域和内存问题 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#4-变量作用域和内存问题">4. 变量、作用域和内存问题</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#基本类型值和引用类型值--">基本类型值和引用类型值  </a></li>
+<li class="toc-entry toc-h2"><a href="#检测类型--">检测类型  </a></li>
+<li class="toc-entry toc-h2"><a href="#执行环境与作用域--">执行环境与作用域  </a></li>
+<li class="toc-entry toc-h2"><a href="#垃圾收集--">垃圾收集  </a></li>
+<li class="toc-entry toc-h2"><a href="#声明提升--">声明提升  </a></li>
+</ul>
+</li>
+</ul><h1 id="4-变量作用域和内存问题">
+<a class="anchor" href="#4-%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E5%86%85%E5%AD%98%E9%97%AE%E9%A2%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 变量、作用域和内存问题</h1>
+
+<h2 id="基本类型值和引用类型值--">
+<a class="anchor" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%80%BC--" aria-hidden="true"><span class="octicon octicon-link"></span></a>基本类型值和引用类型值  <a id="primitive&amp;reference-values"></a>
+</h2>
+
+<ul>
+  <li>基本数据类型是按值访问的，引用类型的值是保存在内存中的对象；</li>
+  <li>基本类型值在内存中占据固定大小的空间，被保存在栈内存中，引用类型的值是对象，保存在堆内存中；</li>
+  <li>值类型赋值时会在内存中开辟一块新的空间，然后把赋过来的值保存于这块新空间中，引用类型赋值时也会开辟一块新的空间，但新空间保存的是赋值对象所在的地址即引用（这就是所谓的浅拷贝）；</li>
+  <li>拓展：<strong>深拷贝和浅拷贝的实现和区别</strong>；</li>
+  <li>引用类型的值是保存在内存中的对象，js不允许直接访问内存中的位置，即不能直接操作对象的内存空间，操作对象时，操作的是对象的引用，为对象添加属性时，操作的是实际的对象；</li>
+  <li>只能给引用类型值动态地添加属性，基本类型添加属性不报错但是访问时是 <code class="language-plaintext highlighter-rouge">undefined</code>；</li>
+  <li>引用类型值的复制实际上引用的是同一个对象（同一个指针），复制的其实是指针，因此两个变量最终都指向同一个对象；</li>
+  <li>ECMAScript所有函数的参数是按值传递，理解当参数是对象时仍然是按值传递而不是按引用，但是参数会按引用来访问这个对象；在函数内部重写 <code class="language-plaintext highlighter-rouge">obj</code> 时，这个变量引用的就是一个局部对象了。而这个局部对象会在函数执行完毕后立即被销毁；</li>
+  <li>
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setName</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">;</span> 
+  <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span> 
+  <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">setName</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>    <span class="c1">//"Nicholas"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="检测类型--">
+<a class="anchor" href="#%E6%A3%80%E6%B5%8B%E7%B1%BB%E5%9E%8B--" aria-hidden="true"><span class="octicon octicon-link"></span></a>检测类型  <a id="determining-type"></a>
+</h2>
+
+<ul>
+  <li>确定一个值是哪种基本类型可以使用 <code class="language-plaintext highlighter-rouge">typeof</code> 操作符；</li>
+  <li>确定一个值是哪种引用类型可以使用 <code class="language-plaintext highlighter-rouge">instanceof</code> 操作符(返回bool)，(可以理解为<code class="language-plaintext highlighter-rouge">son instanceof mother</code>)；</li>
+  <li>引用类型的值都是 <code class="language-plaintext highlighter-rouge">Object</code> 的实例。因此，<code class="language-plaintext highlighter-rouge">someReferenceVar instanceof Object</code>，始终会返回 <code class="language-plaintext highlighter-rouge">true</code>，如果检测基本类型的值，则始终会返回 <code class="language-plaintext highlighter-rouge">false</code>，因为基本类型不是对象；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">instanceof</code> 运算符用来测试一个对象在其原型链（详见第 6 章）中是否存在一个构造函数的 <code class="language-plaintext highlighter-rouge">prototype</code> 属性；</li>
+</ul>
+
+<h2 id="执行环境与作用域--">
+<a class="anchor" href="#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>执行环境与作用域  <a id="execution-context-scope"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>JavaScript没有块级作用域；<code class="language-plaintext highlighter-rouge">if</code> 和 <code class="language-plaintext highlighter-rouge">for {}</code> 里的变量全局能访问；</p>
+  </li>
+  <li>
+    <p>在 Web 浏览器中，全局执行环境被认为是 <a href="chapter08.md#window-object"><code class="language-plaintext highlighter-rouge">window</code> 对象</a>，因此所有全局变量和函数都是作为 <code class="language-plaintext highlighter-rouge">window</code> 对象的属性和方法创建的；</p>
+  </li>
+  <li>
+    <p>执行环境有全局执行环境(也称为全局环境)和函数执行环境之分；</p>
+  </li>
+  <li>
+    <p>在函数外部 用不用var声明的变量均为全局变量；</p>
+  </li>
+  <li>
+    <p>在函数内部：不用var声明的变量为全局变量（但生命周期只从包含函数被调用时才开始有效），用var声明的为局部变量；</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">B</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="mi">222</span><span class="p">)}</span>
+<span class="p">}</span>
+<span class="nx">B</span><span class="p">()</span>  <span class="c1">// B is not a function</span>
+<span class="o">--------</span>
+<span class="nx">A</span><span class="p">();</span>
+<span class="nx">B</span><span class="p">();</span> <span class="c1">// alert 222</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>每个函数都有自己的执行环境。当执行流进入一个函数时，函数的环境就会被推入一个环境栈中。而在函数执行之后，栈将其环境弹出，把控制权返回给之前的执行环境（调用现场）；</p>
+
+    <p><img src="../imgs/4-1.png" alt=""></p>
+  </li>
+  <li>
+    <p>函数被调用时，会创建一个新的执行环境和对应的搜索变量和函数的作用域链，然后使用 <code class="language-plaintext highlighter-rouge">argunments</code> 和其他命名参数的值来初始化函数的活动对象；</p>
+  </li>
+  <li>
+    <p>后台的每个执行环境都有一个表示变量的对象 —— 变量对象；显然，作用域链本质是一个指向变量对象的指针列表，只引用但不实际包含变量对象；</p>
+  </li>
+  <li>
+    <p>作用域链前端始终都是当前执行的代码所在环境的变量对象；</p>
+  </li>
+  <li>
+    <p>某个执行环境中的所有代码执行完毕后，该环境被销毁，保存在其中的所有变量（局部活动对象）和函数定义也随之销毁(全局执行环境直到应用程序退出——例如关闭网页或浏览器——时才会被销毁)；</p>
+  </li>
+  <li>
+    <p>但<a href="chapter07.md#closures">闭包又有所不同</a>，在另一个函数内部定义的函数会将外部函数的活动对象添加到它的作用域链中；</p>
+  </li>
+  <li>
+    <p>变量的执行环境有助于确定应该何时释放内存；</p>
+  </li>
+  <li>
+    <p>延长作用域链：1. <code class="language-plaintext highlighter-rouge">try-catch</code> 语句的 <code class="language-plaintext highlighter-rouge">catch</code> 块；2. <code class="language-plaintext highlighter-rouge">with</code> 语句；</p>
+  </li>
+  <li>
+    <p>作用域链搜索过程，如果局部环境中存在着同名标识符，就不会使用位于父环境中的标识符；</p>
+  </li>
+  <li>
+    <p>创建作用域链和作用域链的作用对理解<a href="chapter07.md#closures">闭包</a>至关重要；</p>
+  </li>
+</ul>
+
+<h2 id="垃圾收集--">
+<a class="anchor" href="#%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86--" aria-hidden="true"><span class="octicon octicon-link"></span></a>垃圾收集  <a id="garbage-collection"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>JavaScript 是一门具有自动垃圾收集机制的编程语言；</p>
+  </li>
+  <li>
+    <p>离开作用域的值将被自动标记为可以回收，因此将在垃圾收集期间被删除；</p>
+  </li>
+  <li>
+    <p>**标记清除 **是目前主流的垃圾收集算法，这种算法的思想是给当前不使用的值加上标记，然后再回收其内存；</p>
+  </li>
+  <li>
+    <p><strong>引用计数</strong>，这种算法的思想是跟踪记录所有值被引用的次数。JavaScript引擎目前都不再使用这种算法;但在 IE 中访问非原生 JavaScript 对象(如 <code class="language-plaintext highlighter-rouge">DOM</code> 元素)时，这种算法仍然可能会导致问题；</p>
+  </li>
+  <li>
+    <p><strong>循环引用</strong> 指的是对象 A 中包含一个指向对象 B 的指针，而对象 B 中也包含一个指向对象 A 的引用；</p>
+  </li>
+  <li>
+    <p>IE 中有一部分对象并不是原生 JavaScript 对象。例如，其 BOM 和 DOM 中的对象就是使用 C++以 COM（Component Object Model，组件对象模型）对象的形式实现的，而 COM 对象的垃圾收集机制采用的就是引用计数策略。因此，即使 IE 的 JavaScript 引擎是使用标记清除策略来实现的，但JavaScript 访问的 COM 对象依然是基于引用计数策略的。换句话说，只要在 IE 中涉及 COM 对象，就会存在循环引用的问题；</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">some_element</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">myObject</span><span class="p">.</span><span class="nx">element</span> <span class="o">=</span> <span class="nx">element</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">someObject</span> <span class="o">=</span> <span class="nx">myObject</span><span class="p">;</span>
+<span class="c1">// 在一个 DOM 元素（element）与一个原生 JavaScript 对象（myObject）之间创建了循环引用。</span>
+<span class="c1">// 由于存在这个循环引用，即使将例子中的 DOM 从页面中移除，它也永远不会被回收</span>
+  
+<span class="nx">myObject</span><span class="p">.</span><span class="nx">element</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">someObject</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="c1">// 将变量设置为 null 意味着切断变量与它此前引用的值之间的连接。</span>
+<span class="c1">// 当垃圾收集器下次运行时，就会删除这些值并回收它们占用的内存</span>
+<span class="c1">// 为了解决上述问题， IE9 把 BOM 和 DOM 对象都转换成了真正的 JavaScript 对象。</span>
+<span class="c1">// 这样，就避免了两种垃圾收集算法并存导致的问题，也消除了常见的内存泄漏现象</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>当代码中存在循环引用现象时，“引用计数”算法就会导致问题；</p>
+  </li>
+  <li>
+    <p>解除变量的引用不仅有助于消除循环引用现象，而且对垃圾收集也有好处；</p>
+  </li>
+  <li>
+    <p>为了确保有效地回收内存，应该及时解除不再使用的全局对象、全局对象属性以及循环引用变量的引用；</p>
+  </li>
+  <li>
+    <p>将其值设置为 <code class="language-plaintext highlighter-rouge">null</code> 来释放其引用——这个 做法叫做解除引用(dereferencing)。这一做法适用于大多数全局变量和全局对象的属性。局部变量会在它们离开执行环境时自动被解除引用；</p>
+  </li>
+  <li>
+    <p>解除一个值的引用并不意味着自动回收该值所占用的内存。解除引用的真正作用是让值脱离执行环境，以便垃圾收集器下次运行时将其回收；</p>
+  </li>
+</ul>
+
+<h2 id="声明提升--">
+<a class="anchor" href="#%E5%A3%B0%E6%98%8E%E6%8F%90%E5%8D%87--" aria-hidden="true"><span class="octicon octicon-link"></span></a>声明提升  <a id="hoisting"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>函数及变量的声明（<strong><code class="language-plaintext highlighter-rouge">var</code></strong> 声明 和 <strong><code class="language-plaintext highlighter-rouge">function</code></strong> 声明的标识符）都将被提升到函数的最顶部；</p>
+  </li>
+  <li>
+    <p>函数声明和变量声明都会被提升，但是：函数会首先被提升，然后才是变量。即【函数声明提升】优先级高于【变量声明提升】；</p>
+  </li>
+  <li>
+    <p>变量可以先使用再声明，会发生声明提升，赋值不会提升；</p>
+  </li>
+  <li>
+    <p>函数可以先调用再声明，会发生函数提升（声明函数提升，表达式函数不提升）；</p>
+
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 声明变量提升</span>
+<span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="c1">// 5</span>
+  
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="c1">// undefined</span>
+<span class="c1">// var a;</span>
+<span class="c1">// var b = a;</span>
+<span class="c1">// a = 5;</span>
+  
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">F</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>		<span class="c1">//undefined </span>
+  <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>  <span class="c1">// 可以看作 var i; 发生声明提升，等价于下例</span>
+<span class="p">}</span>
+<span class="nx">F</span><span class="p">();</span>
+<span class="c1">// 等价上例</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">F</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>		<span class="c1">//undefined </span>
+  <span class="nx">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">F</span><span class="p">();</span>
+  
+<span class="c1">// 函数提升</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">f1</span><span class="p">);</span> <span class="c1">// function f1() {}   </span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">f2</span><span class="p">);</span> <span class="c1">// undefined  </span>
+<span class="kd">function</span> <span class="nx">f1</span><span class="p">()</span> <span class="p">{}</span>
+<span class="kd">var</span> <span class="nx">f2</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{}</span>
+<span class="c1">// 等价于</span>
+<span class="kd">function</span> <span class="nx">f1</span><span class="p">()</span> <span class="p">{}</span>
+<span class="kd">var</span> <span class="nx">f2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">f1</span><span class="p">);</span>  
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">f2</span><span class="p">);</span>
+<span class="nx">f2</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{}</span>
+  
+<span class="c1">// 函数提升</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">a</span><span class="p">(</span><span class="nx">b</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">a</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span> <span class="c1">// a is not a function 函数提升后 var a = 5 把a覆盖掉了</span>
+<span class="c1">// 等价于</span>
+<span class="kd">function</span> <span class="nx">a</span><span class="p">(</span><span class="nx">b</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">a</span><span class="p">;</span>
+<span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nx">a</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+  
+<span class="c1">// 如果上述修改一下</span>
+<span class="kd">var</span> <span class="nx">a</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">a</span><span class="p">(</span><span class="nx">b</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">a</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>  <span class="c1">// alert 出 6</span>
+<span class="c1">// 原因：如果仅仅是重复声明：声明会被忽略，如果声明同时赋值情况就会变化</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/content/chapter03.html" class="navigation navigation-prev" aria-label="Previous page: 3. JavaScript 基本概念"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/content/chapter05.html" class="navigation navigation-next" aria-label="Next page: 5. 引用类型"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

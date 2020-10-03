@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>操作符特殊规则 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter active">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    操作符特殊规则 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#操作符特殊规则">操作符特殊规则</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#一元操作符--">一元操作符  </a></li>
+<li class="toc-entry toc-h2"><a href="#布尔操作符--">布尔操作符  </a></li>
+<li class="toc-entry toc-h2"><a href="#乘性操作符--">乘性操作符  </a></li>
+<li class="toc-entry toc-h2"><a href="#加性操作符--">加性操作符  </a></li>
+<li class="toc-entry toc-h2"><a href="#关系操作符--">关系操作符  </a></li>
+<li class="toc-entry toc-h2"><a href="#相等操作符--">相等操作符  </a></li>
+</ul>
+</li>
+</ul><h1 id="操作符特殊规则">
+<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%89%B9%E6%AE%8A%E8%A7%84%E5%88%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>操作符特殊规则</h1>
+
+<h2 id="一元操作符--">
+<a class="anchor" href="#%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>一元操作符  <a id="unary"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">递增(++)和递减(–)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">在应用于一个包含有效数字字符的字符串时，先将其转换为数字值，再执行加减 1 的操作</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">在应用于一个不包含有效数字字符的字符串时，将变量的值设置为 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">在应用于布尔值 false 时，先将其转换为 0 再执行加减 1 的操作</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">在应用于布尔值 true 时，先将其转换为 1 再执行加减 1 的操作</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">在应用于浮点数值时，执行加减 1 的操作</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">在应用于对象时，先调用对象的 valueOf() 方法以取得一个可供操作的值。然后对该值应用前述规则。如果结果是 NaN，则在调用 toString()方法后再应用前述规则</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="布尔操作符--">
+<a class="anchor" href="#%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>布尔操作符  <a id="boolean"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">逻辑非(!)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果操作数是一个对象，返回 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果操作数是一个空字符串，返回 true</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果操作数是一个非空字符串，返回 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果操作数是数值 0，返回 true</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果操作数是任意非 0 数值(包括 Infinity)，返回 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果操作数是 null / undefined / NaN，返回 true</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">逻辑与(&amp;&amp;)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果第一个操作数是对象，则返回第二个操作数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果第二个操作数是对象，则只有在第一个操作数的求值结果为 true 的情况下才会返回该对象</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是对象，则返回第二个操作数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 null / undefined / NaN，则返回 null / undefined / NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">总结：当左边的值与真等价的时候，系统会尝试运算并返回右边的值，无论右边是真是假；左边的值为假的时候系统直接返回左的值，根本不会去尝试运算右</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">逻辑或(||)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果第一个操作数是对象，则返回第一个操作数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果第一个操作数的求值结果为 false，则返回第二个操作数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是对象，则返回第一个操作数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是 null / undefined / NaN，则返回 null / undefined / NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">总结：当左边的值与真等价的时候，系统直接返回左边的值，不会尝试运算右边；当左边的值与假等价的时候，系统会尝试运算并返回右边(不管右是真是假)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="乘性操作符--">
+<a class="anchor" href="#%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>乘性操作符  <a id="multiplicative"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">乘法(*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 NaN，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 与 0 相乘，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 与非 0 数值相乘，则结果是 Infinity 或-Infinity，取决于有符号操作数的符号</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 与 Infinity 相乘，则结果是 Infinity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数不是数值，则在后台调用 Number()将其转换为数值，然后再应用上面的规则</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">除法(/)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 NaN，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 被 Infinity 除，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是零被零除，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是非零的有限数被零除，则结果是 Infinity 或-Infinity，取决于有符号操作数的符号</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 被任何非零数值除，则结果是 Infinity 或-Infinity，取决于有符号操作数的符号</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数不是数值，则在后台调用 Number()将其转换为数值，然后再应用上面的规则</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">求模(%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果被除数是无穷大值而除数是有限大的数值，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果被除数是有限大的数值而除数是0，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 被 Infinity 除，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果被除数是有限大的数值而除数是无穷大的数值，则结果是被除数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果被除数是0，则结果是0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数不是数值，则在后台调用 Number()将其转换为数值，然后再应用上面的规则</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="加性操作符--">
+<a class="anchor" href="#%E5%8A%A0%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>加性操作符  <a id="additive"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">加法(+)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 NaN，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 加 Infinity，则结果是 Infinity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是-Infinity 加-Infinity，则结果是-Infinity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 加-Infinity，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是+0 加+0，则结果是+0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是-0 加-0，则结果是-0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是+0 加-0，则结果是+0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是字符串，则将第二个操作数与第一个操作数拼接起来</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果只有一个操作数是字符串，则将另一个操作数转换为字符串，然后再将两个字符串拼接起来</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是对象、数值或布尔值，则调用它们的 toString()方法取得相应的字符串值，然后再应用前面关于字符串的规则。对于 undefined 和 null，则分别调用 String()函数并取得字符u串”undefined”和”null”</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">减法(-)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 NaN，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 减 Infinity，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是-Infinity 减-Infinity，则结果是 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是 Infinity 减-Infinity，则结果是 Infinity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是-Infinity 减 Infinity，则结果是-Infinity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是+0 减+0，则结果是+0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是+0 减-0，则结果是-0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果是-0 减-0，则结果是+0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是字符串、布尔值、null 或 undefined，则先在后台调用 Number()函数将其转换为数值，然后再根据前面的规则执行减法计算。如果转换的结果是 NaN，则减法的结果就是 NaN，例如：var foo = “11”+2-“1”; foo值 111</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是对象，则调用对象的 valueOf()方法以取得表示该对象的数值。如果得到的值是 NaN，则减法的结果就是 NaN。如果对象没有 valueOf()方法，则调用其 toString()方法并将得到的字符串转换为数值</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="关系操作符--">
+<a class="anchor" href="#%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>关系操作符  <a id="relational"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">小于(&lt;)、大于(&gt;)、小于等于(&lt;=)和大于等于(&gt;=)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是字符串，则比较两个字符串对应的字符编码值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果一个操作数是数值，则将另一个操作数转换为一个数值，然后执行数值比较</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果一个操作数是布尔值，则先将其转换为数值，然后再执行比较</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果一个操作数是对象，则调用这个对象的 valueOf()方法，用得到的结果按照前面的规则执行比较。如果对象没有 valueOf()方法，则调用 toString()方法，并用得到的结果根据前面的规则执行比较</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="相等操作符--">
+<a class="anchor" href="#%E7%9B%B8%E7%AD%89%E6%93%8D%E4%BD%9C%E7%AC%A6--" aria-hidden="true"><span class="octicon octicon-link"></span></a>相等操作符  <a id="equality"></a>
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">相等(==)和不相等(!=)    先转换再比较， 转换不同的数据类型时</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是布尔值，则在比较相等性之前先将其转换为数值——false 转换为 0，而 true 转换为 1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果一个操作数是对象，另一个操作数不是，则调用对象的 valueOf()方法，用得到的基本类型值按照前面的规则进行比较</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">相等(==)和不相等(!=)   先转换再比较，  进行比较时</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">null 和 undefined 是相等的</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">要比较相等性之前，不能将 null 和 undefined 转换成其他任何值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果有一个操作数是 NaN，则相等操作符返回 false，而不相等操作符返回 true。重要提示:即使两个操作数都是 NaN，相等操作符也返回 false;因为按照规则，NaN 不等于 NaN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">如果两个操作数都是对象，则比较它们是不是同一个对象。如果两个操作数都指向同一个对象，则相等操作符返回 true;否则，返回 false</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">表达式</th>
+      <th style="text-align: center">值</th>
+      <th style="text-align: center">表达式</th>
+      <th style="text-align: center">值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">null == undefined</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">true == 1</td>
+      <td style="text-align: center">true</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">“NaN” == NaN</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: center">true == 2</td>
+      <td style="text-align: center">false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5 == NaN</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: center">undefined == 0</td>
+      <td style="text-align: center">false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">NaN == NaN</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: center">null == 0</td>
+      <td style="text-align: center">false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">NaN != NaN</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">false == 0</td>
+      <td style="text-align: center">true</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[] == false</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">[] == ![]</td>
+      <td style="text-align: center">true</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="../.gitbook/assets/boolean.png" alt="真值表"></p>
+
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/appendix/README.html" class="navigation navigation-prev" aria-label="Previous page: 附录"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/appendix/use-strict.html" class="navigation navigation-next" aria-label="Next page: 严格模式规则"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

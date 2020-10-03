@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>6. 面向对象的程序设计 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    6. 面向对象的程序设计 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#6-面向对象的程序设计">6. 面向对象的程序设计</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#创建对象--">创建对象  </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#工厂模式-">工厂模式 </a></li>
+<li class="toc-entry toc-h3"><a href="#构造函数模式--">构造函数模式  </a></li>
+<li class="toc-entry toc-h3"><a href="#原型模式--">原型模式  </a></li>
+<li class="toc-entry toc-h3"><a href="#构造函数原型模式--">构造函数+原型模式  </a></li>
+<li class="toc-entry toc-h3"><a href="#动态原型模式--">动态原型模式  </a></li>
+<li class="toc-entry toc-h3"><a href="#寄生构造函数模式--">寄生构造函数模式  </a></li>
+<li class="toc-entry toc-h3"><a href="#稳妥构造函数模式--">稳妥构造函数模式  </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#继承-">继承 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#原型链--">原型链  </a></li>
+<li class="toc-entry toc-h3"><a href="#借用构造函数--">借用构造函数  </a></li>
+<li class="toc-entry toc-h3"><a href="#组合继承--">组合继承  </a></li>
+<li class="toc-entry toc-h3"><a href="#原型式继承--">原型式继承  </a></li>
+<li class="toc-entry toc-h3"><a href="#寄生式继承--">寄生式继承  </a></li>
+<li class="toc-entry toc-h3"><a href="#寄生组合式继承--">寄生组合式继承  </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="6-面向对象的程序设计">
+<a class="anchor" href="#6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. 面向对象的程序设计</h1>
+
+<h2 id="创建对象--">
+<a class="anchor" href="#%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1--" aria-hidden="true"><span class="octicon octicon-link"></span></a>创建对象  <a id="create"></a>
+</h2>
+
+<h3 id="工厂模式-">
+<a class="anchor" href="#%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F-" aria-hidden="true"><span class="octicon octicon-link"></span></a>工厂模式 <a id="factory"></a>
+</h3>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">createPerson</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">job</span><span class="p">){</span> 
+  <span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="nx">job</span><span class="p">;</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="p">};</span>
+  <span class="k">return</span> <span class="nx">o</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">person1</span> <span class="o">=</span> <span class="nx">createPerson</span><span class="p">(</span><span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">person2</span> <span class="o">=</span> <span class="nx">createPerson</span><span class="p">(</span><span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Doctor</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+<p>工厂模式虽然解决了创建多个相似对象的问题，但却没有解决对象识别的问题(即怎样知道一个对象的类型)。</p>
+
+<h3 id="构造函数模式--">
+<a class="anchor" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>构造函数模式  <a id="constructor"></a>
+</h3>
+
+<p>按照惯例，构造函数始终都应该以一个大写字母开头。创建自定义的构造函数意味着将来可以将它的实例标识为一种特定的类型。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">job</span><span class="p">){</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="nx">job</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+  <span class="p">};</span> 
+<span class="p">}</span>
+<span class="c1">// 创建Person的实例 必须用 new 操作符</span>
+<span class="kd">var</span> <span class="nx">person1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">person2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Doctor</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">person1</code> 和 <code class="language-plaintext highlighter-rouge">person2</code> 分别保存着 <code class="language-plaintext highlighter-rouge">Person</code> 的一个不同的实例。这两个对象都有一个 <code class="language-plaintext highlighter-rouge">constructor</code>(构造函数)属性，该属性指向 <code class="language-plaintext highlighter-rouge">Person</code>。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">==</span> <span class="nx">Person</span><span class="p">);</span> <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person2</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">==</span> <span class="nx">Person</span><span class="p">);</span> <span class="c1">//true</span>
+
+<span class="c1">// 创建的所有对象既是 Object 的实例，同时也是 Person 的实例</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">);</span>  <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span> <span class="k">instanceof</span> <span class="nx">Person</span><span class="p">);</span>  <span class="c1">//true</span>
+</code></pre></div></div>
+<p>这种方式定义的构造函数是定义在 <code class="language-plaintext highlighter-rouge">Global</code> 对象(在浏览器中是 <code class="language-plaintext highlighter-rouge">window</code> 对象)中。</p>
+
+<ul>
+  <li>
+<strong>对new的理解</strong>
+以上调用构造函数实际上会经历一下4个步骤：
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{};</span>     				<span class="c1">//第一步，创建一个新对象	</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>    <span class="cm">/*这个是自动拥有的*/</span>
+  <span class="nx">o</span><span class="p">.</span><span class="nx">money</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">99万</span><span class="dl">"</span><span class="p">;</span>			<span class="cm">/*第二步：将构造函数的作用域赋给新对象(this指向o)*/</span>
+  <span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="o">=</span><span class="p">{</span>
+      <span class="na">age</span><span class="p">:</span><span class="mi">19</span>              <span class="cm">/*第三步：执行构造函数中的代码(为新对象添加属性)*/</span>
+    <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">o</span><span class="p">;</span>		        <span class="cm">/*第四步：返回一个新对象*/</span>
+<span class="p">}</span> 
+<span class="kd">var</span> <span class="nx">a</span><span class="o">=</span> <span class="nx">A</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">writeln</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>将构造函数当作函数</strong>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 作为普通函数调用</span>
+<span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Doctor</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 添加到window </span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">//"Greg"</span>
+<span class="c1">// 在另一个对象的作用域中调用 </span>
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Kristen</span><span class="dl">"</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Nurse</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 或者 apply()</span>
+<span class="nx">o</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">//"Kristen"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>构造函数的问题</strong>
+每个方法都要在每个实例上重新创建一遍。每个实例都有一个名为 <code class="language-plaintext highlighter-rouge">sayName()</code> 的方法，但那 两个方法不是同一个 <code class="language-plaintext highlighter-rouge">Function</code> 的实例。不要忘了——函数是对象，每定义一个函数，也就实例化了一个对象。以这种方式创建函数，会导致不同的作用域链和标识符解析。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">==</span> <span class="nx">person2</span><span class="p">.</span><span class="nx">sayName</span><span class="p">);</span> <span class="c1">// false</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="原型模式--">
+<a class="anchor" href="#%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>原型模式  <a id="prototype"></a>
+</h3>
+
+<p>我们创建的每个函数都有一个 <code class="language-plaintext highlighter-rouge">prototype</code> (原型)属性，这个属性是一个指针，指向一个对象， 保存该类型对象所有实例共享的属性和方法。就是通过调用构造函数而创建的那个对象实例的原型对象。好处是可以让所有对象实例共享它所包含的属性和方法。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(){}</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">29</span><span class="p">;</span> 
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">;</span> 
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> 
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">person1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span> 
+<span class="nx">person1</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">//"Nicholas"</span>
+<span class="kd">var</span> <span class="nx">person2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">person2</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">//"Nicholas"</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">==</span> <span class="nx">person2</span><span class="p">.</span><span class="nx">sayName</span><span class="p">);</span> <span class="c1">//true</span>
+</code></pre></div></div>
+<p>在默认情况下，所有原型对象都会自动获得一个 <code class="language-plaintext highlighter-rouge">constructor</code>(构造函数)属性，这个属性包含一个指向 <code class="language-plaintext highlighter-rouge">prototype</code> 属性所在函数的指针。也就是 <code class="language-plaintext highlighter-rouge">Person.prototype.constructor</code> 指向 <code class="language-plaintext highlighter-rouge">Person</code>。
+<img src="../imgs/6-1.png" alt=""></p>
+<ul>
+  <li>
+<strong>isPrototypeOf()</strong>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">person1</span><span class="p">));</span> <span class="c1">//true     </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">person2</span><span class="p">));</span> <span class="c1">//true</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>Object.getPrototypeOf()</strong> 
+使用 <code class="language-plaintext highlighter-rouge">Object.getPrototypeOf()</code> 可以方便地取得一个对象的原型，而这在利用原型实现继承的情况下是非常重要的。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">person1</span><span class="p">)</span> <span class="o">==</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span> <span class="c1">//true </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">person1</span><span class="p">).</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Nicholas"</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">person1</span><span class="p">)</span> 
+<span class="c1">// {name: "Nicholas", age: 29, job: "Software Engineer", sayName: ƒ, constructor: ƒ}</span>
+</code></pre></div>    </div>
+    <p>读取某个对象的某个属性时，搜索首先从对象实例本身开始，如果没有找到，则继续搜索指针指向的原型对象。<br>
+如果实例中添的属性与实例原型中的一个属性同名，那我们就在实例中创建该属性，该属性将会屏蔽(不会重写)原型中的那个属性。添加这个属性只会阻止我们访问原型中的那个属性。即使将这个属性设置为 <code class="language-plaintext highlighter-rouge">null</code>，也只会在实例中设置这个属性，而不会恢复其指向原型的连接，使用 <code class="language-plaintext highlighter-rouge">delete</code> 操作符则可以完全删除实例属性。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头的例子</span>
+<span class="nx">person1</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Greg"——来自实例 (搜索规则)</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person2</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Nicholas"——来自原型</span>
+
+<span class="nx">person1</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="kc">null</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// null</span>
+<span class="k">delete</span> <span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Nicholas"——来自原型</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>hasOwnProperty()</strong>
+可以检测一个属性是存在于实例中，还是存在于原型中。这个方法(从 <code class="language-plaintext highlighter-rouge">Object</code> 继承来的)只在给定属性存在于对象实例中时，才会返回 <code class="language-plaintext highlighter-rouge">true</code>。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头的例子</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//false</span>
+<span class="nx">person1</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Greg"——来自实例 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//true</span>
+<span class="k">delete</span> <span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Nicholas"——来自原型    </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//false</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>原型 in 操作符</strong>
+有两种方式使用 <code class="language-plaintext highlighter-rouge">in</code> 操作符:单独使用和在 <code class="language-plaintext highlighter-rouge">for-in</code> 循环中使用。<code class="language-plaintext highlighter-rouge">in</code> 操作符会在通过对象能够访问给定属性时返回 <code class="language-plaintext highlighter-rouge">true</code>，无论该属性存在于实例中还是原型中。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头的例子</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//false</span>
+<span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span> <span class="k">in</span> <span class="nx">person1</span><span class="p">);</span>  <span class="c1">//true</span>
+<span class="nx">person1</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//"Greg" ——来自实例   </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span> <span class="k">in</span> <span class="nx">person1</span><span class="p">);</span> <span class="c1">//true</span>
+</code></pre></div>    </div>
+    <p>同时使用 <code class="language-plaintext highlighter-rouge">hasOwnProperty()</code> 方法和 <code class="language-plaintext highlighter-rouge">in</code> 操作符，就可以确定该属性到底是存在于对象中，还是存在于原型中。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hasPrototypeProperty</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">name</span><span class="p">){</span>
+  <span class="k">return</span> <span class="o">!</span><span class="nx">object</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">name</span> <span class="k">in</span> <span class="nx">object</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// 接开头例子</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">hasPrototypeProperty</span><span class="p">(</span><span class="nx">person</span><span class="p">,</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span>  <span class="c1">//true</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">hasPrototypeProperty</span><span class="p">(</span><span class="nx">person</span><span class="p">,</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span>  <span class="c1">//false</span>
+</code></pre></div>    </div>
+    <p>在使用 <code class="language-plaintext highlighter-rouge">for-in</code> 循环时，返回的是所有能够通过对象访问的、可枚举的(enumerated)属性，其中既包括存在于实例中的属性，也包括存在于原型中的属性。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头例子</span>
+<span class="nx">person1</span><span class="p">.</span><span class="kd">class</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">prop</span> <span class="k">in</span> <span class="nx">person1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">prop</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="c1">//  ["name", "class", "age", "job", "sayName"]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>Object.keys()</strong>
+取得对象上所有可枚举的实例属性。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头例子</span>
+<span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">keys</span><span class="p">);</span>    <span class="c1">//"name,age,job,sayName" 这个顺序也是它们在 for-in 循环中出现的顺序。</span>
+<span class="kd">var</span> <span class="nx">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">p1</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Rob</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">p1</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">31</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">p1keys</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">p1</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">p1keys</span><span class="p">);</span> <span class="c1">//"name,age" </span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>Object.getOwnPropertyNames()</strong>
+得到所有实例属性，无论它是否可枚举。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyNames</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">keys</span><span class="p">);</span> <span class="c1">//"constructor,name,age,job,sayName"</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyNames</span><span class="p">(</span><span class="nx">person1</span><span class="p">);</span>  <span class="c1">//["name", "class"]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>更简单的原型语法</strong>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(){}</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">constructor</span> <span class="p">:</span> <span class="nx">Person</span><span class="p">,</span> <span class="c1">// 为了解决： constructor属性变成了新对象的constructor属性(指向Object构造函数)，不再指向Person函数</span>
+  <span class="na">name</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">age</span> <span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
+  <span class="na">job</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">,</span> 
+  <span class="na">sayName</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> 
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>    </div>
+    <p>以这种方式重设 <code class="language-plaintext highlighter-rouge">constructo</code>r 属性会导致它的 <code class="language-plaintext highlighter-rouge">[[Enumerable]]</code> 特性被设置为 <code class="language-plaintext highlighter-rouge">true</code>。默认情况下，原生的 <code class="language-plaintext highlighter-rouge">constructor</code> 属性是不可枚举的。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">//重设构造函数，只适用于 ECMAScript 5 兼容的浏览器    </span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span> <span class="dl">"</span><span class="s2">constructor</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">enumerable</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="na">value</span><span class="p">:</span> <span class="nx">Person</span>
+<span class="p">});</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>原型的动态性</strong></p>
+
+    <p>由于在原型中查找值的过程是一次搜索，因此对原型对象所做的任何修改都能够立即从实例上反映出来——即使是先创建了实例后修改原型。因为实例与原型之间的连接只不过是一个指针，而非一个副本。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">friend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayHi</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">hi</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="nx">friend</span><span class="p">.</span><span class="nx">sayHi</span><span class="p">();</span> <span class="c1">//"hi"(没有问题!)</span>
+</code></pre></div>    </div>
+    <p>可以随时为原型添加属性和方法，并且修改能够立即在所有对象实例中反映出来，但是重写整个原型对象，把原型修改为另外一个对象就等于切断了构造函数与最初原型之间的联系。 请记住:实例中的指针仅指向原型，而不指向构造函数。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(){</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">friend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span> 
+  <span class="na">constructor</span><span class="p">:</span> <span class="nx">Person</span><span class="p">,</span> 
+  <span class="na">sayHi</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">hi</span><span class="dl">'</span><span class="p">);</span> 
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="nx">friend</span><span class="p">.</span><span class="nx">sayHi</span><span class="p">();</span> <span class="c1">//error</span>
+</code></pre></div>    </div>
+    <p><img src="../imgs/6-2.png" alt=""></p>
+  </li>
+  <li>
+    <p><strong>原生对象的原型</strong></p>
+
+    <p>所有原生引用类型(<code class="language-plaintext highlighter-rouge">Object</code>、<code class="language-plaintext highlighter-rouge">Array</code>、<code class="language-plaintext highlighter-rouge">String</code>，等等)都在其构造函数的原型上定义了方法。例如，在 <code class="language-plaintext highlighter-rouge">Array.prototype</code> 中可以找到 <code class="language-plaintext highlighter-rouge">sort()</code> 方法，而在 <code class="language-plaintext highlighter-rouge">String.prototype</code> 中可以找到 <code class="language-plaintext highlighter-rouge">substring()</code> 方法。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">startsWith</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">;</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello</span><span class="dl">"</span><span class="p">));</span> <span class="c1">//true</span>
+</code></pre></div>    </div>
+    <p>通过原生对象的原型，不仅可以取得所有默认方法的引用，而且也可以定义新方法。但不推荐在产品化的程序中修改原生对象的原型。如果因某个实现中缺少某个方法，就在原生对象的原型中添加这个方法，那么当在另一个支持该方法的实现中运行代码时，就可能会导致命名冲突。而且，这样做也可能会意外地重写原生方法。<br></p>
+  </li>
+  <li>
+    <p><strong>原型对象的问题</strong></p>
+
+    <p>原型模式的最大问题是由其共享的本性所导致的，这种共享对于函数非常合适，对于基本值的属性也说得过去，毕竟通过在实例上添加一个同名属性，可以隐藏原型中的对应属性。然而，对于包含引用类型值(比如数组)的属性来说，问题就比较突出了。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 接开头代码</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">friends</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">jaime</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">czm</span><span class="dl">'</span><span class="p">]</span>
+<span class="c1">// person1.friends = ['Van'] // 放在实例上的属性</span>
+<span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">Van</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 操作原型上的属性</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">// "jaime,czm,Van" </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person2</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">// "jaime,czm,Van" </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span> <span class="o">===</span> <span class="nx">person2</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">//true</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="构造函数原型模式--">
+<a class="anchor" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>构造函数+原型模式  <a id="constructor-prototype"></a>
+</h3>
+
+<p>构造函数模式用于定义实例属性，而原型模式用于定义方法和共享的属性。结果，每个实例都会有自己的一份实例属性的副本，但同时又共享着对方法的引用，最大限度地节省了内存。另外，这种混成模式还支持向构造函数传递参数;</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">job</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="nx">job</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">friends</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">Shelby</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Court</span><span class="dl">"</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span> 
+  <span class="na">constructor</span> <span class="p">:</span> <span class="nx">Person</span><span class="p">,</span> 
+  <span class="na">sayName</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> 
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">person1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">person2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Doctor</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">Van</span><span class="dl">"</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">//"Shelby,Count,Van" </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person2</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">//"Shelby,Count" </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">friends</span> <span class="o">===</span> <span class="nx">person2</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">//false</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">===</span> <span class="nx">person2</span><span class="p">.</span><span class="nx">sayName</span><span class="p">);</span> <span class="c1">//true</span>
+</code></pre></div></div>
+<p>这种模式是目前使用最广泛、认同度最高的一种创建自定义类型的方法。</p>
+
+<h3 id="动态原型模式--">
+<a class="anchor" href="#%E5%8A%A8%E6%80%81%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>动态原型模式  <a id="dynamic-prototype"></a>
+</h3>
+
+<p>独立的构造函数和原型。动态原型模式正是致力于解决这个问题的一个方案，它把所有信息都封装在了构造函数中，而通过在构造函数中初始化原型(仅在必要的情况下)，又保持了同时使用构造函数和原型的优点。换句话说，可以通过检查某个应该存在的方法是否有效，来决定是否需要初始化原型。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">job</span><span class="p">){</span>
+  <span class="c1">//属性</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="nx">job</span><span class="p">;</span>
+  <span class="c1">//方法</span>
+  <span class="c1">// 这段代码只会在初次调用构造函数时才会执行。</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="k">this</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">!=</span> <span class="dl">"</span><span class="s2">function</span><span class="dl">"</span><span class="p">){</span>
+    <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+      <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">};</span> 
+  <span class="p">}</span>
+  <span class="c1">// 此后，原型已经完成初始化，不需要再修改。这里对原型所做的修改，能够立即在所有实例中得到反映。</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">friend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Software Engineer</span><span class="dl">"</span><span class="p">);</span> 
+<span class="nx">friend</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">if</code> 语句检查的可以是初始化之后应该存在的任何属性或方法——不必用一大堆 <code class="language-plaintext highlighter-rouge">if</code> 语句检查每个属性和每个方法;只要检查其中一个即可。这种模式创建的对象，还可以使用 <code class="language-plaintext highlighter-rouge">instanceof</code> 操作符确定它的类型。</p>
+
+<p><em>使用动态原型模式时，不能使用对象字面量重写原型。如果在已经创建了实例的情况下重写原型，那么就会切断现有实例与新原型之间的联系。</em></p>
+
+<h3 id="寄生构造函数模式--">
+<a class="anchor" href="#%E5%AF%84%E7%94%9F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>寄生构造函数模式  <a id="parasitic-constructor"></a>
+</h3>
+
+<p>寄生构造函数返回的对象与构造函数或者与构造函数的原型属性之间没有关系;也就是说，构造函数返回的对象与在构造函数外部创建的对象没有什么不同。为此，不能依赖 <code class="language-plaintext highlighter-rouge">instanceof</code> 操作符来确定对象类型。由于存在上述问题，我们建议在可以使用其他模式的情况下，不要使用这种模式。</p>
+
+<h3 id="稳妥构造函数模式--">
+<a class="anchor" href="#%E7%A8%B3%E5%A6%A5%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>稳妥构造函数模式  <a id="durable-constructor"></a>
+</h3>
+
+<p>所谓稳妥对象，指的是没有公共属性，而且其方法也不引用 <code class="language-plaintext highlighter-rouge">this</code> 的对象。稳妥对象最适合在一些安全的环境中(这些环境中会禁止使用 <code class="language-plaintext highlighter-rouge">this</code> 和 <code class="language-plaintext highlighter-rouge">new</code>)，或者在防止数据被其他应用程序(如 Mashup 程序)改动时使用。稳妥构造函数遵循与寄生构造函数类似的模式，但有两点不同: 一是新创建对象的实例方法不引用 <code class="language-plaintext highlighter-rouge">this</code>；二是不使用 <code class="language-plaintext highlighter-rouge">new</code> 操作符调用构造函数。
+使用稳妥构造函数模式创建的对象与构造函数之间也没有什么关系，因此 <code class="language-plaintext highlighter-rouge">instanceof</code> 操作符对这种对象也没有意义。</p>
+
+<h2 id="继承-">
+<a class="anchor" href="#%E7%BB%A7%E6%89%BF-" aria-hidden="true"><span class="octicon octicon-link"></span></a>继承 <a id="inheritance"></a>
+</h2>
+
+<p>实现继承主要是依靠原型链。</p>
+
+<h3 id="原型链--">
+<a class="anchor" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE--" aria-hidden="true"><span class="octicon octicon-link"></span></a>原型链  <a id="prototype-chaining"></a>
+</h3>
+
+<p>让原型对象等于另一个类型的实例。此时的原型对象将包含一个指向另一个原型的指针，相应地，另一个原型中也包含着一个指向另一个构造函数的指针。这就是所谓原型链的基本概念。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">SuperType</span><span class="p">(){</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">property</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">SuperType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getSuperValue</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">property</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kd">function</span> <span class="nx">SubType</span><span class="p">(){</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">subproperty</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//继承了 SuperType</span>
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SuperType</span><span class="p">();</span>
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getSubValue</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(){</span> 
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">subproperty</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">();</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance</span><span class="p">.</span><span class="nx">getSuperValue</span><span class="p">());</span> <span class="c1">//true</span>
+</code></pre></div></div>
+<p>原型链，本质上扩展了原型搜索机制。在通过原型链实现继承的情况下，搜索过程就得以沿着原型链继续向上。调用 <code class="language-plaintext highlighter-rouge">instance.getSuperValue()</code> 会经历三个搜索步骤：1)搜索实例；2)搜索 <code class="language-plaintext highlighter-rouge">SubType.prototype</code>; 3)搜索 <code class="language-plaintext highlighter-rouge">SuperType.prototype</code>，最后一步才会找到该方法。找不到会一直搜索到原型链末端。
+所有函数的默认原型都是 <code class="language-plaintext highlighter-rouge">Object</code> 的实例，因此默认原型都会包含一个内部指针，指向 <code class="language-plaintext highlighter-rouge">Object.prototype</code>。
+<img src="../imgs/6-3.png/" alt=""></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 只要是原型链中出现过的原型，都可以说是该原型链所派生的实例的原型</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">);</span> <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance</span> <span class="k">instanceof</span> <span class="nx">SuperType</span><span class="p">);</span> <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance</span> <span class="k">instanceof</span> <span class="nx">SubType</span><span class="p">);</span> <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">instance</span><span class="p">));</span>  <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">SuperType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">instance</span><span class="p">));</span>  <span class="c1">//true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">instance</span><span class="p">));</span> <span class="c1">//true</span>
+</code></pre></div></div>
+<p>子类型有时候需要重写超类型中的某个方法，或者需要添加超类型中不存在的某个方法。给原型添加方法的代码一定要放在替换原型的语句之后。重写方法在子类型调用时将会屏蔽原来的方法。</p>
+
+<ul>
+  <li>
+<strong>原型链的问题</strong>
+最主要的问题来自包含引用类型值的原型。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">SuperType</span><span class="p">(){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">green</span><span class="dl">"</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">SubType</span><span class="p">(){}</span>
+<span class="c1">//继承了 SuperType </span>
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SuperType</span><span class="p">();</span> 
+<span class="kd">var</span> <span class="nx">instance1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">()</span>
+<span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">black</span><span class="dl">"</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span>   <span class="c1">//"red,blue,green,black"</span>
+<span class="kd">var</span> <span class="nx">instance2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">();</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance2</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span> <span class="c1">//"red,blue,green,black"</span>
+</code></pre></div>    </div>
+    <p>原型链的第二个问题是: 在创建子类型的实例时，不能向超类型的构造函数中传递参数。实际上，应该说是没有办法在不影响所有对象实例的情况下，给超类型的构造函数传递参数。再加上原型中包含引用类型值所带来的问题，实践中很少会单独使用原型链。</p>
+  </li>
+</ul>
+
+<h3 id="借用构造函数--">
+<a class="anchor" href="#%E5%80%9F%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0--" aria-hidden="true"><span class="octicon octicon-link"></span></a>借用构造函数  <a id="constructor-stealing"></a>
+</h3>
+
+<p>借用构造函数。即在子类型构造函数的内部调用超类型构造函数。别忘了，函数只不过是在特定环境中执行代码的对象， 因此通过使用 <a href="../reference/function.md#properties-methods"><code class="language-plaintext highlighter-rouge">apply()</code> 和 <code class="language-plaintext highlighter-rouge">call()</code></a> 方法也可以在(将来)新创建的对象上执行构造函数。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">SuperType</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span> <span class="c1">// 解决传递参数</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">green</span><span class="dl">"</span><span class="p">];</span>
+<span class="p">}</span> 
+<span class="kd">function</span> <span class="nx">SubType</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+  <span class="c1">//继承了 SuperType</span>
+  <span class="nx">SuperType</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span> <span class="c1">//解决传递参数</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">instance1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">(</span><span class="dl">'</span><span class="s1">jaime</span><span class="dl">'</span><span class="p">);</span> 
+<span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">black</span><span class="dl">"</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span> <span class="c1">//"red,blue,green,black"</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance1</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// "jaime"</span>
+<span class="kd">var</span> <span class="nx">instance2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">(</span><span class="dl">'</span><span class="s1">czm</span><span class="dl">'</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance2</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span> <span class="c1">//"red,blue,green"</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance2</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// "czm"</span>
+</code></pre></div></div>
+<ul>
+  <li>
+<strong>借用构造函数的问题</strong>
+无法避免构造函数模式存在的问题——方法都在构造函数中定义，因此函数复用就无从谈起了。而且，在超类型的原型中定义的方法，对子类型而言也是不可见的，结果所有类型都只能使用构造函数模式。考虑到这些问题，借用构造函数的技术也是很少单独使用的。</li>
+</ul>
+
+<h3 id="组合继承--">
+<a class="anchor" href="#%E7%BB%84%E5%90%88%E7%BB%A7%E6%89%BF--" aria-hidden="true"><span class="octicon octicon-link"></span></a>组合继承  <a id="conbinate-inheritance"></a>
+</h3>
+
+<p>组合继承，指的是将原型链和借用构造函数的技术组合到一块。使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又能够保证每个实例都有它自己的属性。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">SuperType</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">green</span><span class="dl">"</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="nx">SuperType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kd">function</span> <span class="nx">SubType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">){</span>
+  <span class="c1">//继承属性 </span>
+  <span class="nx">SuperType</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="c1">//继承方法</span>
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SuperType</span><span class="p">();</span> 
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">=</span> <span class="nx">SubType</span><span class="p">;</span> 
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayAge</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span> 
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">instance1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">(</span><span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="mi">29</span><span class="p">);</span>
+<span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">black</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance1</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span> <span class="c1">//"red,blue,green,black"</span>
+<span class="nx">instance1</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">// "Nicholas"</span>
+<span class="nx">instance1</span><span class="p">.</span><span class="nx">sayAge</span><span class="p">();</span> <span class="c1">// 29</span>
+<span class="kd">var</span> <span class="nx">instance2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubType</span><span class="p">(</span><span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">,</span> <span class="mi">27</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">instance2</span><span class="p">.</span><span class="nx">colors</span><span class="p">);</span> <span class="c1">//"red,blue,green" </span>
+<span class="nx">instance2</span><span class="p">.</span><span class="nx">sayName</span><span class="p">();</span> <span class="c1">//"Greg";</span>
+<span class="nx">instance2</span><span class="p">.</span><span class="nx">sayAge</span><span class="p">();</span> <span class="c1">// 27</span>
+</code></pre></div></div>
+<p>组合继承避免了原型链和借用构造函数的缺陷，融合了它们的优点，是最常用的继承模式。而且，<code class="language-plaintext highlighter-rouge">instanceof</code> 和 <code class="language-plaintext highlighter-rouge">isPrototypeOf()</code> 也能够用于识别基于组合继承创建的对象。</p>
+
+<h3 id="原型式继承--">
+<a class="anchor" href="#%E5%8E%9F%E5%9E%8B%E5%BC%8F%E7%BB%A7%E6%89%BF--" aria-hidden="true"><span class="octicon octicon-link"></span></a>原型式继承  <a id="prototype-inheritance"></a>
+</h3>
+
+<p>ECMAScript5通过新增 <code class="language-plaintext highlighter-rouge">Object.create()</code> 方法规范化了原型式继承。这个方法接收两个参数:一 个用作新对象原型的对象和(可选的)一个为新对象定义额外属性的对象。在传入一个参数的情况下， Object.create()与 object()方法的行为相同。第二个参数与 <code class="language-plaintext highlighter-rouge">Object.defineProperties()</code> 方法的第二个参数格式相同:每个属性都是通过自己的描述符定义的。以这种方式指定的任何属性都会覆盖原型对象上的同名属性。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">object</span><span class="p">(</span><span class="nx">o</span><span class="p">)</span> <span class="p">{</span>
+ <span class="kd">function</span> <span class="nx">F</span><span class="p">(){}</span>
+ <span class="nx">F</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">o</span><span class="p">;</span>
+ <span class="k">return</span> <span class="k">new</span> <span class="nx">F</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">friends</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">Shelby</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Court</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Van</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">anotherPerson</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">person</span><span class="p">,</span> <span class="p">{</span> 
+  <span class="na">name</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Greg</span><span class="dl">"</span><span class="p">;</span> 
+<span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">friends</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rob</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">yetAnotherPerson</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
+<span class="nx">yetAnotherPerson</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Linda</span><span class="dl">"</span><span class="p">;</span> 
+<span class="nx">yetAnotherPerson</span><span class="p">.</span><span class="nx">friends</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">"</span><span class="s2">Barbie</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">friends</span><span class="p">);</span> <span class="c1">//"Shelby,Court,Van,Rob,Barbie"</span>
+</code></pre></div></div>
+<p>在没有必要兴师动众地创建构造函数，而只想让一个对象与另一个对象保持类似的情况下，原型式 继承是完全可以胜任的。不过别忘了，原型式继承包含引用类型值的属性始终都会共享相应的值，就像使用原型模式一样。</p>
+
+<h3 id="寄生式继承--">
+<a class="anchor" href="#%E5%AF%84%E7%94%9F%E5%BC%8F%E7%BB%A7%E6%89%BF--" aria-hidden="true"><span class="octicon octicon-link"></span></a>寄生式继承  <a id="parasitic-inheritance"></a>
+</h3>
+
+<p>寄生式继承是与原型式继承紧密相关的一种思路。寄生式继承的思路与寄生构造函数和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后再像真地是它做了所有工作一样返回对象。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">createAnother</span><span class="p">(</span><span class="nx">original</span><span class="p">){</span> 
+  <span class="kd">var</span> <span class="nx">clone</span> <span class="o">=</span> <span class="nx">object</span><span class="p">(</span><span class="nx">original</span><span class="p">);</span>   <span class="c1">// object同原型式继承中的object 通过调用函数创建一个新对象</span>
+  <span class="nx">clone</span><span class="p">.</span><span class="nx">sayHi</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>  <span class="c1">//以某种方式来增强这个对象</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">hi</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">};</span>
+  <span class="k">return</span> <span class="nx">clone</span><span class="p">;</span> <span class="c1">//返回这个对象</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">friends</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">Shelby</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Court</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Van</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">anotherPerson</span> <span class="o">=</span> <span class="nx">createAnother</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span> 
+<span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">sayHi</span><span class="p">();</span> <span class="c1">//"hi"</span>
+</code></pre></div></div>
+<p>在主要考虑对象而不是自定义类型和构造函数的情况下，寄生式继承也是一种有用的模式。前面示 范继承模式时使用的 <code class="language-plaintext highlighter-rouge">object()</code> 函数不是必需的;任何能够返回新对象的函数都适用于此模式。</p>
+
+<p>使用寄生式继承来为对象添加函数，会由于不能做到函数复用而降低效率;这一点与构造函数模式类似。</p>
+
+<h3 id="寄生组合式继承--">
+<a class="anchor" href="#%E5%AF%84%E7%94%9F%E7%BB%84%E5%90%88%E5%BC%8F%E7%BB%A7%E6%89%BF--" aria-hidden="true"><span class="octicon octicon-link"></span></a>寄生组合式继承  <a id="parasitic-conbinate-inheritance"></a>
+</h3>
+
+<p>组合继承最大的问题就是无论什么情况下，都会调用两次超类型构造函数:一次是在创建子类型原型的时候，另一次是在子类型构造函数内部。子类型最终会包含超类型对象的全部实例属性，我们不得不在调用子类型构造函数时重写这些属性。
+寄生组合式继承，即通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已。本质上，就是使用寄生式继承来继承超类型的原型，然后再将结果指定给子类型的原型。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">object</span><span class="p">(</span><span class="nx">o</span><span class="p">)</span> <span class="p">{</span>
+ <span class="kd">function</span> <span class="nx">F</span><span class="p">(){}</span>
+ <span class="nx">F</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">o</span><span class="p">;</span>
+ <span class="k">return</span> <span class="k">new</span> <span class="nx">F</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">inheritPrototype</span><span class="p">(</span><span class="nx">subType</span><span class="p">,</span> <span class="nx">superType</span><span class="p">){</span> 
+  <span class="kd">var</span> <span class="nx">prototype</span> <span class="o">=</span> <span class="nx">object</span><span class="p">(</span><span class="nx">superType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>  
+  <span class="nx">prototype</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">=</span> <span class="nx">subType</span><span class="p">;</span> <span class="c1">// 增强对象</span>
+  <span class="nx">subType</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">prototype</span><span class="p">;</span> <span class="c1">// 指定对象</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">SuperType</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">green</span><span class="dl">"</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="nx">SuperType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kd">function</span> <span class="nx">SubType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">){</span> 
+  <span class="nx">SuperType</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="nx">inheritPrototype</span><span class="p">(</span><span class="nx">SubType</span><span class="p">,</span> <span class="nx">SuperType</span><span class="p">);</span>
+<span class="nx">SubType</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayAge</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><img src="../imgs/6-4.png" alt=""></p>
+
+<p>这个例子的高效率体现在它只调用了一次 <code class="language-plaintext highlighter-rouge">SuperType</code> 构造函数，并且因此避免了在 <code class="language-plaintext highlighter-rouge">SubType.prototype</code> 上面创建不必要的、多余的(同名被屏蔽的在原型上的)属性。与此同时，原型链还能保持不变;因此，还能够正常使用 <code class="language-plaintext highlighter-rouge">instanceof</code> 和 <code class="language-plaintext highlighter-rouge">isPrototypeOf()</code>。集寄生式继承和组合继承的优点与一身，是实现基于类型继承的最有效方式。</p>
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/content/chapter05.html" class="navigation navigation-prev" aria-label="Previous page: 5. 引用类型"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/content/chapter07.html" class="navigation navigation-next" aria-label="Next page: 7. 函数表达式"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

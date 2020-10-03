@@ -1,0 +1,107 @@
+:root{--dark:#343a40;--grayer:#495057;--gray:#6c757d;--gray-light:#ced4da;--light-gray:#adb5bd;--light:#dee2e6;--lighter:#e9ecef;--lightest:#faf9fa;--white:#fff;--blue:#007bff;--red:#dc3545;--bg-color:var(--white);}
+.post__contact h4 {
+  margin-bottom: .7rem;
+  font-weight: 300;
+}
+
+.logo_img {
+  width: 30px;
+  height: 30px;
+}
+
+.paginiation li .pagi__link.active {
+  color: #d81e06;
+}
+
+.paginiation li .pagi__link.active:after {
+  background: #d81e06;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+
+  20%, 60% {
+    transform: rotate(-25deg)
+  }
+
+  40%, 80% {
+    transform: rotate(10deg)
+  }
+}
+
+.book-summary ul.summary {
+  padding-bottom: 20px;
+}
+
+.archive__list_title {
+  margin: 2rem 0 .5rem 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .github-corner,
+  .post__contact {
+    display: none;
+  }
+}
+
+.chapter__content.content>.section-nav {
+  position: fixed;
+  left: 48%;
+  top: 4rem;
+  margin-left: calc(var(--content-width)/2 + 30px);
+  list-style: none;
+  max-width: calc(50vw - 60px)
+}
+
+.chapter__content.content>.section-nav li {
+  margin: 10px 0;
+  line-height: 1.35rem
+}
+
+.chapter__content.content>.section-nav li>a {
+  color: var(--gray);
+  border-bottom: none;
+  position: relative
+}
+
+.chapter__content.content>.section-nav li>a:hover {
+  color: var(--dark)
+}
+
+.chapter__content.content>.section-nav li>a:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 0;
+  background-color: var(--gray);
+  bottom: -5px;
+  left: 0;
+  transition: all .25s ease
+}
+
+.chapter__content.content>.section-nav li.active>a {
+  color: var(--dark)
+}
+
+.chapter__content.content>.section-nav li.active>a:after {
+  width: 100%
+}
+
+@media screen and (max-width:1200px) {
+  .chapter__content.content>.section-nav {
+    position: inherit;
+    left: auto;
+    top: auto;
+    margin-left: 0;
+    list-style: inherit;
+    max-width: 100%
+  }
+}

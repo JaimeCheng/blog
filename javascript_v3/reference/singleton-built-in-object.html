@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>单体内置对象 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    单体内置对象 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#单体内置对象">单体内置对象</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#global对象---">Global对象   </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#uri编码方法-">URI编码方法 </a></li>
+<li class="toc-entry toc-h3"><a href="#eval方法-">eval()方法 </a></li>
+<li class="toc-entry toc-h3"><a href="#global对象的属性-">Global对象的属性 </a></li>
+<li class="toc-entry toc-h3"><a href="#window对象-">window对象 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#math对象-">Math对象 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#math对象的属性-">Math对象的属性 </a></li>
+<li class="toc-entry toc-h3"><a href="#min和-max方法-">min()和 max()方法 </a></li>
+<li class="toc-entry toc-h3"><a href="#舍入方法-">舍入方法 </a></li>
+<li class="toc-entry toc-h3"><a href="#random方法-">random()方法 </a></li>
+<li class="toc-entry toc-h3"><a href="#其他方法-">其他方法 </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="单体内置对象">
+<a class="anchor" href="#%E5%8D%95%E4%BD%93%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>单体内置对象</h1>
+
+<p>在所有代码执行之前，作用域中就已经存在两个内置对象：<code class="language-plaintext highlighter-rouge">Global</code> 和 <code class="language-plaintext highlighter-rouge">Math</code>。</p>
+
+<h2 id="global对象---">
+<a class="anchor" href="#global%E5%AF%B9%E8%B1%A1---" aria-hidden="true"><span class="octicon octicon-link"></span></a>Global对象   <a id="global"></a>
+</h2>
+
+<p>不属于任何其他对象的属性和方法，最终都是它的属性和方法。事实上，没有全局变量或全局函数;所有在全局作用域中定义的属性和函数，都是 <code class="language-plaintext highlighter-rouge">Global</code> 对象的属性。如 <code class="language-plaintext highlighter-rouge">isNaN()</code>、<code class="language-plaintext highlighter-rouge">isFinite()</code>、<code class="language-plaintext highlighter-rouge">parseInt()</code> 以及 <code class="language-plaintext highlighter-rouge">parseFloat()</code>，实际上全都是 <code class="language-plaintext highlighter-rouge">Global</code> 对象的方法。</p>
+
+<h3 id="uri编码方法-">
+<a class="anchor" href="#uri%E7%BC%96%E7%A0%81%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>URI编码方法 <a id="uri-encoding-methods"></a>
+</h3>
+
+<ul>
+  <li>
+<strong>encodeURI()</strong>：主要用于整个 URI(例如，http://www.wrox.com/illegal value.htm)，不会对本身属于 URI 的特殊字符进行编码，例如冒号、正斜杠、 问号和井字号；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">uri</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.wrox.com/illegal value.htm#start</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">encodeURI</span><span class="p">(</span><span class="nx">uri</span><span class="p">));</span>   
+<span class="c1">// "http://www.wrox.com/illegal%20value.htm#start" </span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>encodeURIComponent()</strong>：主要用于对 URI 中的某一段(例如前面 URI 中的 illegal value.htm)进行编码，会对它发现的任何非标准字符进行编码。；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">uri</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.wrox.com/illegal value.htm#start</span><span class="dl">"</span><span class="p">;</span> 
+<span class="c1">//"http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start"    </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">uri</span><span class="p">));</span>
+</code></pre></div>    </div>
+    <p>两者区别，正是对整个 URI 使用 <code class="language-plaintext highlighter-rouge">encodeURI()</code>，而只能对附加在现有 URI 后面的字符串使用 <code class="language-plaintext highlighter-rouge">encodeURIComponent()</code> 的原因所在。使用 <code class="language-plaintext highlighter-rouge">encodeURIComponent()</code> 方法的时候要比使用 <code class="language-plaintext highlighter-rouge">encodeURI()</code> 更多，因为在实践中更常见的是对查询字符串参数而不是对基础 URI 进行编码。</p>
+  </li>
+  <li>
+<strong>decodeURI()</strong>：只能对使用 <code class="language-plaintext highlighter-rouge">encodeURI()</code> 替换的字符进行解码；</li>
+  <li>
+<strong>decodeURIComponent()</strong>：只能对使用 <code class="language-plaintext highlighter-rouge">encodeURIComponent()</code> 替换的字符进行解码；</li>
+</ul>
+
+<h3 id="eval方法-">
+<a class="anchor" href="#eval%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>eval()方法 <a id="eval-methods"></a>
+</h3>
+
+<p><code class="language-plaintext highlighter-rouge">eval()</code> 方法就像是一个完整的ECMAScript解析器，它只接受一个参数，即要执行的ECMAScript或(JavaScript)字符串。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span><span class="p">(</span><span class="dl">"</span><span class="s2">function sayHi() { alert('hi'); }</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">sayHi</span><span class="p">();</span>
+<span class="nb">eval</span><span class="p">(</span><span class="dl">"</span><span class="s2">var msg = 'hello world'; </span><span class="dl">"</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span> <span class="c1">//"hello world"</span>
+</code></pre></div></div>
+<p>函数 <code class="language-plaintext highlighter-rouge">sayHi()</code> 是在 <code class="language-plaintext highlighter-rouge">eval()</code> 内部定义的。但由于对 <code class="language-plaintext highlighter-rouge">eval()</code> 的调用最终会被替换成定义函数的实际代码，因此可以在下一行调用 <code class="language-plaintext highlighter-rouge">sayHi()</code>，对于变量也一样；
+<code class="language-plaintext highlighter-rouge">eval()</code> 中创建的任何变量或函数都不会被提升，因为在解析代码的时候，它们被包含在一个字 符串中；它们只在 <code class="language-plaintext highlighter-rouge">eval()</code> 执行的时候创建；
+严格模式下，在外部访问不到 <code class="language-plaintext highlighter-rouge">eval()</code> 中创建的任何变量或函数，因此前面两个例子都会导致错误。在严格模式下，为 <code class="language-plaintext highlighter-rouge">eval</code> 赋值也会导致错误；
+使用 <code class="language-plaintext highlighter-rouge">eval()</code> 时必须极为谨慎，特别是在用它执行用户输入数据的情况下。否则，可能会有恶意用户输入危险代码(即所谓的代码注入)。</p>
+
+<h3 id="global对象的属性-">
+<a class="anchor" href="#global%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Global对象的属性 <a id="global-object-properties"></a>
+</h3>
+
+<p>ECMAScript 5 明确禁止给 <code class="language-plaintext highlighter-rouge">undefined</code>、<code class="language-plaintext highlighter-rouge">NaN</code> 和 <code class="language-plaintext highlighter-rouge">Infinity</code> 赋值，这样做即使在非严格模式下也会导致错误。
+<img src="../imgs/5-2.png" alt=""></p>
+
+<h3 id="window对象-">
+<a class="anchor" href="#window%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>window对象 <a id="window-object"></a>
+</h3>
+
+<p>ECMAScript 虽然没有指出如何直接访问 <code class="language-plaintext highlighter-rouge">Global</code> 对象，但 Web 浏览器都是将这个全局对象作为 <code class="language-plaintext highlighter-rouge">window</code> 对象的一部分加以实现的。因此，在全局作用域中声明的所有变量和函数，就都成为了 <code class="language-plaintext highlighter-rouge">window</code> 对象的属性。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">sayColor</span><span class="p">(){</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">color</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">sayColor</span><span class="p">();</span> <span class="c1">//"red"</span>
+<span class="c1">// 另一种取得 `Global` 对象的方法:</span>
+<span class="kd">var</span> <span class="nb">global</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+<span class="p">}();</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">window</code> 对象详见<a href="../content/chapter08.md#window-object">第八章</a>。</p>
+
+<h2 id="math对象-">
+<a class="anchor" href="#math%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Math对象 <a id="math"></a>
+</h2>
+
+<p>为保存数学公式和信息提供了一个公共位置，即 <code class="language-plaintext highlighter-rouge">Math</code> 对象。</p>
+
+<h3 id="math对象的属性-">
+<a class="anchor" href="#math%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Math对象的属性 <a id="math-object-properties"></a>
+</h3>
+<p><img src="../imgs/5-3.png" alt=""></p>
+
+<h3 id="min和-max方法-">
+<a class="anchor" href="#min%E5%92%8C-max%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>min()和 max()方法 <a id="min-max"></a>
+</h3>
+
+<p><code class="language-plaintext highlighter-rouge">min()</code> 和 <code class="language-plaintext highlighter-rouge">max()</code> 方法用于确定一组数值中的最小值和最大值。这两个方法都可以接收任意多个数值参数；这两个方法经常用于避免多余的循环和在 <code class="language-plaintext highlighter-rouge">if</code> 语句中确定一组数的最大值。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">max</span><span class="p">);</span> <span class="c1">//54</span>
+<span class="kd">var</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">min</span><span class="p">);</span> <span class="c1">//3</span>
+</code></pre></div></div>
+<p>找到数组中的最大值或最小值，可以使用 <code class="language-plaintext highlighter-rouge">apply</code></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nb">Math</span><span class="p">,</span> <span class="nx">values</span><span class="p">);</span>
+</code></pre></div></div>
+<p>这个技巧的关键是把 <code class="language-plaintext highlighter-rouge">Math</code> 对象作为 <code class="language-plaintext highlighter-rouge">apply()</code> 的第一个参数，从而正确地设置 <code class="language-plaintext highlighter-rouge">this</code> 值。然后，可以将任何数组作为第二个参数。</p>
+
+<h3 id="舍入方法-">
+<a class="anchor" href="#%E8%88%8D%E5%85%A5%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>舍入方法 <a id="rounding"></a>
+</h3>
+
+<ul>
+  <li>
+<strong>Math.ceil()</strong> 执行向上舍入，即它总是将数值向上舍入为最接近的整数；</li>
+  <li>
+<strong>Math.floor()</strong> 执行向下舍入，即它总是将数值向下舍入为最接近的整数；</li>
+  <li>
+<strong>Math.round()</strong> 执行标准舍入，即它总是将数值四舍五入为最接近的整数；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="mf">25.9</span><span class="p">));</span> <span class="c1">//26 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="mf">25.5</span><span class="p">));</span> <span class="c1">//26 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="mf">25.1</span><span class="p">));</span> <span class="c1">//26</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">25.9</span><span class="p">));</span> <span class="c1">//26 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">25.5</span><span class="p">));</span> <span class="c1">//26 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">25.1</span><span class="p">));</span> <span class="c1">//25</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mf">25.9</span><span class="p">));</span> <span class="c1">//25 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mf">25.5</span><span class="p">));</span> <span class="c1">//25 </span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mf">25.1</span><span class="p">));</span> <span class="c1">//25</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="random方法-">
+<a class="anchor" href="#random%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>random()方法 <a id="random"></a>
+</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Math.random()</code> 方法返回大于等于 0 小于 1 的一个随机数。套用下面的公式，可以从某个整数范围内随机选择一个值。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">值</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">可能值的总数</span> <span class="o">+</span> <span class="nx">第一个可能的值</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 1-10</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// 2-10</span>
+<span class="c1">// 通过一个函数来计算可能值的总数和第一个可能的值</span>
+<span class="kd">function</span> <span class="nx">selectFrom</span><span class="p">(</span><span class="nx">lowerValue</span><span class="p">,</span> <span class="nx">upperValue</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="kd">var</span> <span class="nx">choices</span> <span class="o">=</span> <span class="nx">upperValue</span> <span class="o">-</span> <span class="nx">lowerValue</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">choices</span> <span class="o">+</span> <span class="nx">lowerValue</span><span class="p">);</span> 
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">selectFrom</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span> <span class="c1">// 介于2和10之间(包括2和10)的一个数值</span>
+<span class="c1">// 利用这个函数，可以方便地从数组中随机 取出一项，例如:</span>
+<span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">green</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">blue</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">yellow</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">black</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">purple</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">brown</span><span class="dl">"</span><span class="p">];</span> 
+<span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">[</span><span class="nx">selectFrom</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">)];</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span> <span class="c1">// 可能是数组中包含的任何一个字符串</span>
+</code></pre></div></div>
+
+<h3 id="其他方法-">
+<a class="anchor" href="#%E5%85%B6%E4%BB%96%E6%96%B9%E6%B3%95-" aria-hidden="true"><span class="octicon octicon-link"></span></a>其他方法 <a id="others"></a>
+</h3>
+<p><img src="../imgs/5-4.png" alt="">
+不同实现可能会对这些方法采用不同的算法，因此这些方法在不同的实现中可能会有不同的精度。</p>
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/reference/primitive-wrapper.html" class="navigation navigation-prev" aria-label="Previous page: 基本包装类型"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/quiz/README.html" class="navigation navigation-next" aria-label="Next page: 专项练习"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

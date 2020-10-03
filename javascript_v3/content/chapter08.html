@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>8. BOM - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    8. BOM - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#8-bom">8. BOM</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#window对象-">window对象 </a></li>
+<li class="toc-entry toc-h2"><a href="#location对象-">location对象 </a></li>
+<li class="toc-entry toc-h2"><a href="#navigator对象-">navigator对象 </a></li>
+<li class="toc-entry toc-h2"><a href="#screen对象-">screen对象 </a></li>
+<li class="toc-entry toc-h2"><a href="#history对象-">history对象 </a></li>
+</ul>
+</li>
+</ul><h1 id="8-bom">
+<a class="anchor" href="#8-bom" aria-hidden="true"><span class="octicon octicon-link"></span></a>8. BOM</h1>
+
+<h2 id="window对象-">
+<a class="anchor" href="#window%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>window对象 <a id="window-object"></a>
+</h2>
+
+<p>全局变量会成为 <code class="language-plaintext highlighter-rouge">window</code> 对象的属性，但是定全局变量与在 <code class="language-plaintext highlighter-rouge">window</code> 对象上直接定义属性的差别：全局变量不能通过 <code class="language-plaintext highlighter-rouge">delete</code> 操作符删除，而直接在 window 对象上的定义的属性可以。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">29</span><span class="p">;</span> 
+<span class="nb">window</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">//在IE &lt; 9 时抛出错误，在其他所有浏览器中都返回false </span>
+<span class="k">delete</span> <span class="nb">window</span><span class="p">.</span><span class="nx">age</span><span class="p">;</span>
+<span class="c1">//在IE &lt; 9 时抛出错误，在其他所有浏览器中都返回true </span>
+<span class="k">delete</span> <span class="nb">window</span><span class="p">.</span><span class="nx">color</span><span class="p">;</span> <span class="c1">//returns true</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span> <span class="c1">//29</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">color</span><span class="p">);</span> <span class="c1">//undefined</span>
+</code></pre></div></div>
+<ul>
+  <li>
+<strong>窗口位置</strong>
+下列代码可以跨浏览器取得窗口左边和上边的位置：
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">leftPos</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenLeft</span> <span class="o">==</span> <span class="dl">"</span><span class="s2">number</span><span class="dl">"</span><span class="p">)</span> <span class="p">?</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenLeft</span> <span class="p">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenX</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">topPos</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenTop</span> <span class="o">==</span> <span class="dl">"</span><span class="s2">number</span><span class="dl">"</span><span class="p">)</span> <span class="p">?</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenTop</span> <span class="p">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">screenY</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>但不同浏览器的坐标起点不同，无法在跨浏览器的条件下取得窗口左边和上边的精确坐标值。</p>
+  </li>
+  <li>
+<strong>窗口大小</strong>
+不同浏览器会有所不同。IE9+、Firefox、Safari、Opera 和 Chrome 提供以下4个属性：
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+<span class="c1">// IE8</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">clientWidth</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">clientHeight</span><span class="p">;</span>
+<span class="c1">// 通常先判断 window.outerWidth 是否可用</span>
+</code></pre></div>    </div>
+    <p>使用 <code class="language-plaintext highlighter-rouge">resizeTo()</code> 和 <code class="language-plaintext highlighter-rouge">resizeBy()</code> 方法可以调整浏览器窗口的大小。这两个方法都接收两个参数，其中 <code class="language-plaintext highlighter-rouge">resizeTo()</code> 接收浏览器窗口的新宽度和新高度，而 <code class="language-plaintext highlighter-rouge">resizeBy()</code> 接收新窗口与原窗口的宽度和高度之差。有可能被浏览器禁用，同样不适用于框架，而只能对最外层的
+<code class="language-plaintext highlighter-rouge">window</code> 对象使用。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">//调整到 100×100</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">resizeTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="c1">//调整到 200×150</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">resizeBy</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+<span class="c1">//调整到 300×300</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">resizeTo</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>导航和打开窗口</strong>
+<code class="language-plaintext highlighter-rouge">window.open</code> 接收 4 个参数：要加载的 URL、窗口目标、一个特性字符串以及一个表 示新页面是否取代浏器历史记录中当前加载页面的布尔值。通常只须传递第一个参数，最后一个参数只在不打开新窗口的情况下使用。此外，第二个参数也可以是下列任何一个特殊的窗口名称： <code class="language-plaintext highlighter-rouge">_self</code> 、 <code class="language-plaintext highlighter-rouge">_parent</code> 、 <code class="language-plaintext highlighter-rouge">_top</code> 或 <code class="language-plaintext highlighter-rouge">_blank</code> 。第三个参数是一个逗号分隔的设置字符串，表示在新窗口中都显示哪些特性。下表列出了可以出现在这个字符串中的设置选项。
+<img src="../imgs/8-1.png" alt="">
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 等同于&lt; a href="http://www.wrox.com" target="topFrame"&gt;&lt;/a&gt;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.wrox.com/</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">topFrame</span><span class="dl">"</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">wroxWin</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.wrox.com/</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">wroxWindow</span><span class="dl">"</span><span class="p">,</span>
+<span class="dl">"</span><span class="s2">height=400,width=400,top=10,left=10,resizable=yes</span><span class="dl">"</span><span class="p">);</span>
+<span class="c1">// 调整大小</span>
+<span class="nx">wroxWin</span><span class="p">.</span><span class="nx">resizeTo</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span>
+<span class="c1">// 移动位置</span>
+<span class="nx">wroxWin</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
+<span class="c1">// 关闭</span>
+<span class="nx">wroxWin</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">wroxWin</span><span class="p">.</span><span class="nx">closed</span><span class="p">);</span> <span class="c1">//true</span>
+</code></pre></div>    </div>
+    <p>大多数浏览器都内置有弹出窗口屏蔽程序。浏览器内置的屏蔽程序阻止的弹出窗口，那
+么 <code class="language-plaintext highlighter-rouge">window.open()</code> 很可能会返回 <code class="language-plaintext highlighter-rouge">null</code>，浏览器扩展或其他程序阻止通常会抛出一个错误。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">blocked</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">wroxWin</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.wrox.com</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">_blank</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">wroxWin</span> <span class="o">==</span> <span class="kc">null</span><span class="p">){</span>
+    <span class="nx">blocked</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">ex</span><span class="p">){</span>
+  <span class="nx">blocked</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">blocked</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">The popup was blocked!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>setTimeout()和setInterval()</strong>
+异步方法，类似预约制排队取号。<code class="language-plaintext highlighter-rouge">setTimeout</code> 都是在全局作用域中执行的，因此函数中 <code class="language-plaintext highlighter-rouge">this</code> 的值在非严格模式下指向 <code class="language-plaintext highlighter-rouge">window</code> 对象，在严格模式下是 <code class="language-plaintext highlighter-rouge">undefined</code> 。</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">timeoutId</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 会返回一个数值 ID</span>
+<span class="p">},</span> <span class="mi">1000</span><span class="p">);</span> <span class="c1">// </span>
+<span class="c1">//注意：把它取消</span>
+<span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timeoutId</span><span class="p">);</span>
+  
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">intervalId</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">incrementNumber</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">num</span><span class="o">++</span><span class="p">;</span>
+  <span class="c1">//如果执行次数达到了 max 设定的值，则取消后续尚未执行的调用</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">intervalId</span><span class="p">);</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Done</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">intervalId</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">incrementNumber</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+  
+<span class="kd">function</span> <span class="nx">incrementNumber</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">num</span><span class="o">++</span><span class="p">;</span>
+  <span class="c1">// 如果执行次数未达到 max  设定的值，则设置另一次setTimeout</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">incrementNumber</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  	<span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Done</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">incrementNumber</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+</code></pre></div>    </div>
+    <p>一般认为，使用 <code class="language-plaintext highlighter-rouge">setTimeout()</code> 来模拟 <code class="language-plaintext highlighter-rouge">setInterval()</code> 是一种最佳模式。在开发环境下，很少使用真正的 <code class="language-plaintext highlighter-rouge">setInterval()</code>，原因是后一个 <code class="language-plaintext highlighter-rouge">setInterval()</code> 可能会在前一个 <code class="language-plaintext highlighter-rouge">setInterval()</code> 结束之前启动。而像前面示例中那样使用 <code class="language-plaintext highlighter-rouge">setTimeout()</code> ，则完全可以避免这一点。所以，最好不要使用 <code class="language-plaintext highlighter-rouge">setInterval()</code> 。</p>
+  </li>
+  <li>
+<strong>系统对话框</strong>
+浏览器通过 <code class="language-plaintext highlighter-rouge">alert()</code> 、 <code class="language-plaintext highlighter-rouge">confirm()</code> 和 <code class="language-plaintext highlighter-rouge">prompt()</code> 方法可以调用系统对话框向用户显示消息。通过这几个方法打开的对话框都是同步和模态的。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">"</span><span class="s2">What is your name? </span><span class="dl">"</span><span class="p">,</span> <span class="dl">""</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">result</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Welcome, </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">result</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="location对象-">
+<a class="anchor" href="#location%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>location对象 <a id="location-object"></a>
+</h2>
+
+<p><code class="language-plaintext highlighter-rouge">location</code> 是最有用的<code class="language-plaintext highlighter-rouge">BOM</code> 对象之一，保存着当前文档的信息，将 <code class="language-plaintext highlighter-rouge">URL</code> 解析为独立的片段；既是 <code class="language-plaintext highlighter-rouge">window</code> 对象的属性，也是 <code class="language-plaintext highlighter-rouge">document</code> 对象的属性；换句话说，<code class="language-plaintext highlighter-rouge">window.location</code> 和 <code class="language-plaintext highlighter-rouge">document.location</code> 引用的是同一个对象。下表列出了它所有属性：
+<img src="../imgs/8-2.png" alt="">
+<img src="../imgs/8-3.png" alt="location示例"></p>
+
+<ul>
+  <li>
+<strong>位置操作</strong>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 3种方法 立即打开新 URL 并在浏览器的历史记录中生成一条记录。</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.wrox.com</span><span class="dl">"</span><span class="p">);</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.wrox.com</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.wrox.com</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">// 不会在历史记录中生成新记录。用户不能回到前一个页面</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.wrox.com/</span><span class="dl">"</span><span class="p">);</span>
+<span class="c1">// 重新加载 </span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span> <span class="c1">// 有可能从缓存中加载）</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// 从服务器重新加载</span>
+<span class="c1">// 位于 reload() 调用之后的代码可能会也可能不会执行，这要取决于网络或系统资源等因素。最好将 reload() 放在代码的最后一行。</span>
+</code></pre></div>    </div>
+    <p>修改 <code class="language-plaintext highlighter-rouge">location</code> 对象的其他属性也可以改变当前加载的页面，每次修改 <code class="language-plaintext highlighter-rouge">location</code> 的属性（ <code class="language-plaintext highlighter-rouge">hash</code> 除外），页面都会以新 URL 重新加载。</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">//将 URL 修改为"http://www.wrox.com/WileyCDA/#section1"</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">hash</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">#section1</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">//将 URL 修改为"http://www.wrox.com/WileyCDA/?q=javascript"</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">search</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">?q=javascript</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">//将 URL 修改为"http://www.yahoo.com/WileyCDA/"</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">hostname</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">www.yahoo.com</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">//将 URL 修改为"http://www.yahoo.com/mydir/"</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">mydir</span><span class="dl">"</span><span class="p">;</span>
+<span class="c1">//将 URL 修改为"http://www.yahoo.com:8080/WileyCDA/"</span>
+<span class="nx">location</span><span class="p">.</span><span class="nx">port</span> <span class="o">=</span> <span class="mi">8080</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="navigator对象-">
+<a class="anchor" href="#navigator%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>navigator对象 <a id="navigator-object"></a>
+</h2>
+
+<p><code class="language-plaintext highlighter-rouge">navigator</code> 对象与其他 <code class="language-plaintext highlighter-rouge">BOM</code> 对象的情况一样，每个浏览器中的 <code class="language-plaintext highlighter-rouge">navigator</code> 对象也都有一套自己的属性。下表列出了存在于所有浏览器中的属性和方法，以及支持它们的浏览器版本。
+<img src="../img/8-4.png" alt="">
+<img src="../imgs/8-5.png" alt="Chrome navigator示例"></p>
+
+<h2 id="screen对象-">
+<a class="anchor" href="#screen%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>screen对象 <a id="screen-object"></a>
+</h2>
+
+<p><code class="language-plaintext highlighter-rouge">screen</code> 对象基本上只用来表明客户端的能力，其中包括浏览器窗口外部的显示器的信息，如像素宽度和高度等。每个浏览器(PC/Mobile)中的 <code class="language-plaintext highlighter-rouge">screen</code> 对象都包含着各不相同的属性，下表列出了所有属性及支持相应属性的浏览器。
+<img src="../img/8-6.png" alt=""></p>
+
+<h2 id="history对象-">
+<a class="anchor" href="#history%E5%AF%B9%E8%B1%A1-" aria-hidden="true"><span class="octicon octicon-link"></span></a>history对象 <a id="history-object"></a>
+</h2>
+
+<p><code class="language-plaintext highlighter-rouge">history</code> 对象保存着用户上网的历史记录，从窗口被打开的那一刻算起。</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//后退一页</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="c1">//前进一页</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="c1">//前进两页</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="c1">//跳转到最近的 wrox.com 页面 如果历史记录中不包含该字符串，则什么也不做</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="dl">"</span><span class="s2">wrox.com</span><span class="dl">"</span><span class="p">);</span>
+<span class="c1">//后退一页</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">back</span><span class="p">();</span>
+<span class="c1">//前进一页</span>
+<span class="nx">history</span><span class="p">.</span><span class="nx">forward</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">history</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+  <span class="c1">//这应该是用户打开窗口后的第一个页面</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/content/chapter07.html" class="navigation navigation-prev" aria-label="Previous page: 7. 函数表达式"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/content/chapter09.html" class="navigation navigation-next" aria-label="Next page: 9. 客户端检测"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

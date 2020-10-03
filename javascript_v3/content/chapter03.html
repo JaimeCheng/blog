@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>3. JavaScript 基本概念 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    3. JavaScript 基本概念 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#3-javascript基本概念">3. JavaScript基本概念</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#基本概念---">基本概念   </a></li>
+<li class="toc-entry toc-h2"><a href="#数据类型---">数据类型   </a></li>
+<li class="toc-entry toc-h2"><a href="#typeof操作符---">typeof操作符   </a></li>
+<li class="toc-entry toc-h2"><a href="#操作符---">操作符   </a></li>
+<li class="toc-entry toc-h2"><a href="#语句---">语句   </a></li>
+<li class="toc-entry toc-h2"><a href="#函数---">函数   </a></li>
+</ul>
+</li>
+</ul><h1 id="3-javascript基本概念">
+<a class="anchor" href="#3-javascript%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. JavaScript基本概念</h1>
+
+<h2 id="基本概念---">
+<a class="anchor" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5---" aria-hidden="true"><span class="octicon octicon-link"></span></a>基本概念   <a id="basics"></a>
+</h2>
+
+<ul>
+  <li>标识符、关键字、操作符、语句、函数；</li>
+  <li>ECMAScript的一切（变量、函数名和操作符）都区分大小写；</li>
+  <li>语句末尾建议加 <code class="language-plaintext highlighter-rouge">;</code>，某些情况增进代码性能；</li>
+  <li>var未初始化的变量会保存一个特殊的值；</li>
+  <li>一条语句定义多个变量，用 <code class="language-plaintext highlighter-rouge">,</code> 分隔开；</li>
+</ul>
+
+<h2 id="数据类型---">
+<a class="anchor" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B---" aria-hidden="true"><span class="octicon octicon-link"></span></a>数据类型   <a id="data-types"></a>
+</h2>
+
+<ul>
+  <li>基本数据类型
+    <ul>
+      <li><strong>Undefined</strong></li>
+      <li><strong>Null</strong></li>
+      <li><strong>Number</strong></li>
+      <li><strong>Boolean</strong></li>
+      <li><strong>String</strong></li>
+    </ul>
+  </li>
+  <li>复杂数据类型
+    <ul>
+      <li><strong>Object</strong></li>
+    </ul>
+  </li>
+  <li>ES6新增</li>
+  <li>数据类型见<a href="../datatype/">详解</a>
+</li>
+</ul>
+
+<h2 id="typeof操作符---">
+<a class="anchor" href="#typeof%E6%93%8D%E4%BD%9C%E7%AC%A6---" aria-hidden="true"><span class="octicon octicon-link"></span></a><code class="language-plaintext highlighter-rouge">typeof</code>操作符   <a id="typeof"></a>
+</h2>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">typeof null</code>返回值；</li>
+  <li>从技术角度讲，函数在 ES 中是对象，不是一种数据类型。然而，函数也确实有一些特殊的属性，因此通过 <code class="language-plaintext highlighter-rouge">typeof</code> 操作符来区分函数和其他对象是有必要的；</li>
+</ul>
+
+<h2 id="操作符---">
+<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6---" aria-hidden="true"><span class="octicon octicon-link"></span></a>操作符   <a id="operators"></a>
+</h2>
+
+<ul>
+  <li>一元操作符：<code class="language-plaintext highlighter-rouge">a++</code> 和 <code class="language-plaintext highlighter-rouge">++a</code> 的重要区别，联想记忆看顺序变量在前就先用再计算 <code class="language-plaintext highlighter-rouge">++</code>；</li>
+  <li>布尔操作符：
+    <ul>
+      <li>逻辑非 <code class="language-plaintext highlighter-rouge">!</code> ：<code class="language-plaintext highlighter-rouge">!!变量</code> 等同于 <code class="language-plaintext highlighter-rouge">Boolean(变量)</code> 用于将一个值转换为与其对应的布尔值；</li>
+      <li>逻辑与 <code class="language-plaintext highlighter-rouge">&amp;&amp;</code>：逻辑与属于短路操作，即如果第一个操作数能够决定结果 <code class="language-plaintext highlighter-rouge">false</code>，那么就不会再对第二个操作数求值；</li>
+      <li>逻辑或 <code class="language-plaintext highlighter-rouge">||</code>：逻辑或也是短路操作符。也就是说，如果第一个操作数的求值结果为 <code class="language-plaintext highlighter-rouge">true</code>，就不会对第二个操作数求值了,可以利用逻辑或的这一行为来避免为变量赋 <code class="language-plaintext highlighter-rouge">null</code> 或 <code class="language-plaintext highlighter-rouge">undefined</code> 值；</li>
+      <li>
+        <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="nx">preferredObject</span> <span class="o">||</span> <span class="nx">backupObject</span><span class="p">;</span>
+</code></pre></div>        </div>
+      </li>
+      <li>逻辑与和逻辑或运算的返回值不是true和false.而是和true或false等价的原值；</li>
+    </ul>
+  </li>
+  <li>乘性操作符：<code class="language-plaintext highlighter-rouge">*</code>，<code class="language-plaintext highlighter-rouge">/</code>，<code class="language-plaintext highlighter-rouge">%</code> ；</li>
+  <li>加性操作符：<code class="language-plaintext highlighter-rouge">+</code>，<code class="language-plaintext highlighter-rouge">-</code> ；</li>
+  <li>关系操作符：<code class="language-plaintext highlighter-rouge">&gt;</code>，<code class="language-plaintext highlighter-rouge">&lt;</code>，<code class="language-plaintext highlighter-rouge">&gt;=</code>，<code class="language-plaintext highlighter-rouge">&lt;=</code> ；</li>
+  <li>相等操作符：<code class="language-plaintext highlighter-rouge">==</code>，<code class="language-plaintext highlighter-rouge">!=</code>，<code class="language-plaintext highlighter-rouge">===</code>，<code class="language-plaintext highlighter-rouge">!==</code> ；</li>
+  <li>条件操作符：<code class="language-plaintext highlighter-rouge">variable = boolean_expression ? true_value : false_value</code> ；</li>
+  <li>赋值操作符：<code class="language-plaintext highlighter-rouge">=</code>，复合赋值操作符；</li>
+  <li>逗号操作符：
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">var num1=1, num2=2, num3=3;</code>，可执行多条语句；</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">var num = (5, 1, 4, 8, 0); // num的值为0</code>，赋值时用最后一项，这种写法不常用；</li>
+    </ul>
+  </li>
+  <li>位操作符：<code class="language-plaintext highlighter-rouge">~</code>，<code class="language-plaintext highlighter-rouge">&amp;</code>，<code class="language-plaintext highlighter-rouge">|</code>，<code class="language-plaintext highlighter-rouge">^</code>，<code class="language-plaintext highlighter-rouge">&lt;&lt;</code>，<code class="language-plaintext highlighter-rouge">&gt;&gt;</code>，<code class="language-plaintext highlighter-rouge">&gt;&gt;&gt;</code> ；</li>
+  <li>操作符特殊规则见<a href="../appendix/operator-rules.md">附录</a>；</li>
+</ul>
+
+<h2 id="语句---">
+<a class="anchor" href="#%E8%AF%AD%E5%8F%A5---" aria-hidden="true"><span class="octicon octicon-link"></span></a>语句   <a id="statements"></a>
+</h2>
+
+<ul>
+  <li>
+<strong>if</strong>语句；</li>
+  <li>
+<strong>do-while</strong>语句，后测试循环语句，在对条件表达式求值之前，循环体内的代码至少会被执行一次；</li>
+  <li>
+<strong>while</strong>语句，前测试循环语句，在循环体内的代码被执行之前，就会对出口条件求值，循环体内的代码有可能永远不会被执行；</li>
+  <li>
+<strong>for</strong>语句，<code class="language-plaintext highlighter-rouge">i++</code>  其实相当于while循环结束之前的最后一句执行，使用 <code class="language-plaintext highlighter-rouge">while</code> 循环做不到的，使用 <code class="language-plaintext highlighter-rouge">for</code> 循环同样也做不到；</li>
+  <li>
+<strong>for-in</strong>语句，是一种精准的迭代语句，可以用来枚举对象的属性；</li>
+  <li>
+<strong>label</strong>语句，<code class="language-plaintext highlighter-rouge">label: statement</code>，可以在代码中添加标签，以便将来使用，常搭配嵌套循环语句；</li>
+  <li>
+<strong>break</strong>语句，立即退出循环， 强制继续执行循环后面的语句；</li>
+  <li>
+<strong>continue</strong>语句，退出循环，但退出循环后会从循环的顶 部继续执行；</li>
+  <li>
+<strong>with</strong>语句，目的主要是为了简化多次编写同一个对象的工作，大量使用 <code class="language-plaintext highlighter-rouge">with</code> 语句会导致性能下降，在开发大型应用程序时，不建议使用 <code class="language-plaintext highlighter-rouge">with</code> 语句，严格模式不允许使用 <code class="language-plaintext highlighter-rouge">with</code> 语句；</li>
+  <li>
+<strong>switch</strong>语句，每一种情形 <code class="language-plaintext highlighter-rouge">case</code> 的含义是:“如果表达式等于这个值 <code class="language-plaintext highlighter-rouge">value</code>，则执行后面的 语句(statement)”。而 <code class="language-plaintext highlighter-rouge">break</code> 关键字会导致代码执行流跳出 <code class="language-plaintext highlighter-rouge">switch</code> 语句。如果省略 <code class="language-plaintext highlighter-rouge">break</code> 关键字， 就会导致执行完当前 <code class="language-plaintext highlighter-rouge">case</code> 后，继续执行下一个 <code class="language-plaintext highlighter-rouge">case</code>。最后的 <code class="language-plaintext highlighter-rouge">default</code> 关键字则用于在表达式不匹配前 面任何一种情形的时候，执行机动代码(因此，也相当于一个 <code class="language-plaintext highlighter-rouge">else</code> 语句)；</li>
+  <li>各语句详解见<a href="../quiz/statement.md">示例</a>；</li>
+</ul>
+
+<h2 id="函数---">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0---" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数   <a id="function"></a>
+</h2>
+
+<ul>
+  <li>理解参数，可传递任意数量、类型参数，原因是 ECMAScript 中的参数在内部是用一个数组来表示的，在函数体内可以通过类数组 <code class="language-plaintext highlighter-rouge">arguments</code> 对象来 访问这个参数数组，获取传递给函数的每一参数。<code class="language-plaintext highlighter-rouge">arguments</code> 对象的 <code class="language-plaintext highlighter-rouge">length</code> 属性可以获知有多少个参数传递给了函数；</li>
+  <li>非严格模式下，<code class="language-plaintext highlighter-rouge">arguments</code> 和命名参数的值保持同步，但内存空间独立，没有传递值的参数自动赋予<code class="language-plaintext highlighter-rouge">undefined</code>，如果只传入了一个参数，那么为 <code class="language-plaintext highlighter-rouge">arguments[1]</code> 设置的值不会反应到命名参数中。这是因为 <code class="language-plaintext highlighter-rouge">arguments</code> 对象的长度是由传入的参数个数决定的，即多余的 <code class="language-plaintext highlighter-rouge">arguments</code> 会被忽略；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span> <span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// 12</span>
+<span class="nx">add</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// NaN</span>
+  
+<span class="kd">function</span> <span class="nx">fnArguments2</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">c</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>	<span class="c1">// 2，arguments中自动获取的是实参个数，和形参无关。</span>
+<span class="p">}</span>
+<span class="nx">fnArguments2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>严格模式下，<code class="language-plaintext highlighter-rouge">arguments[1]</code>设置值，命名参数的值仍然还是 <code class="language-plaintext highlighter-rouge">undefined</code>。其次，重写 <code class="language-plaintext highlighter-rouge">arguments</code> 的值会导致语法错误(代码将不会执行)；</li>
+  <li>ECMAScript中的所有参数传递的都是值，不可能通过引用传递参数；</li>
+  <li>实际上，未指定返回值的函数返回的是一个特殊的 <code class="language-plaintext highlighter-rouge">undefined</code> 值；</li>
+  <li>由于不存在函数签名的特性，ECMAScript函数不能被重载，命名相同只会被后来的覆盖；</li>
+  <li>函数详解见<a href="../reference/function.md">Function专题</a>；</li>
+</ul>
+
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/content/chapter02.html" class="navigation navigation-prev" aria-label="Previous page: 2. 在 HTML 中使用 JavaScript"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/content/chapter04.html" class="navigation navigation-next" aria-label="Next page: 4. 变量、作用域和内存问题"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

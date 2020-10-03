@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>Number - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    Number - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#number">Number</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#数值字面量---">数值字面量   </a></li>
+<li class="toc-entry toc-h2"><a href="#数值范围--">数值范围  </a></li>
+<li class="toc-entry toc-h2"><a href="#nan--">NaN  </a></li>
+<li class="toc-entry toc-h2"><a href="#数值转换--">数值转换  </a></li>
+</ul>
+</li>
+</ul><h1 id="number">
+<a class="anchor" href="#number" aria-hidden="true"><span class="octicon octicon-link"></span></a>Number</h1>
+
+<h2 id="数值字面量---">
+<a class="anchor" href="#%E6%95%B0%E5%80%BC%E5%AD%97%E9%9D%A2%E9%87%8F---" aria-hidden="true"><span class="octicon octicon-link"></span></a>数值字面量   <a id="number-literal-format"></a>
+</h2>
+
+<ul>
+  <li>最基本的数值字面量格式是十进制整数；</li>
+  <li>整数还可以通过八进制或十六进制的字面值来表示；八进制字面值的第一位必须是零(0)，然后是八进制数字序列(0~7)。如果字面值中的数值超出了范围，那么前导零将被忽略，后面的数值将被当作十进制数值解析；</li>
+  <li>
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">octalNum1</span> <span class="o">=</span> <span class="mi">070</span><span class="p">;</span> <span class="c1">// 八进制的 56</span>
+<span class="kd">var</span> <span class="nx">octalNum2</span> <span class="o">=</span> <span class="mi">079</span><span class="p">;</span> <span class="c1">// 无效的八进制数值——解析为 79</span>
+<span class="kd">var</span> <span class="nx">octalNum3</span> <span class="o">=</span> <span class="mi">08</span><span class="p">;</span> <span class="c1">// 无效的八进制数值——解析为 8</span>
+</code></pre></div>    </div>
+  </li>
+  <li>e 表示法，10的指数次幂，<code class="language-plaintext highlighter-rouge">3.125e3</code> 表示 <code class="language-plaintext highlighter-rouge">3.125*10^3</code>，<code class="language-plaintext highlighter-rouge">3.125e-3</code> 表示 <code class="language-plaintext highlighter-rouge">3.125*10^-3</code>；</li>
+  <li>浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数，浮点计算的误差是使用基于 IEEE754 数值的浮点计算的通病，永远不要测试某个特定的浮点数值；</li>
+</ul>
+
+<h2 id="数值范围--">
+<a class="anchor" href="#%E6%95%B0%E5%80%BC%E8%8C%83%E5%9B%B4--" aria-hidden="true"><span class="octicon octicon-link"></span></a>数值范围  <a id="range"></a>
+</h2>
+
+<ul>
+  <li>ECMAScript 能够表示的最小数值保 存在 <code class="language-plaintext highlighter-rouge">Number.MIN_VALUE</code> 中—在大多数浏览器中，这个值是 <code class="language-plaintext highlighter-rouge">5e-324</code>；</li>
+  <li>能够表示的最大数值保存在 <code class="language-plaintext highlighter-rouge">Number.MAX_VALUE</code> 中—在大多数浏览器中，该值是<code class="language-plaintext highlighter-rouge">1.7976931348623157e+308</code>；</li>
+  <li>超出数值范围的值，将被自动转换成特殊的 <code class="language-plaintext highlighter-rouge">Infinity</code> 值。负数会被转换成 <code class="language-plaintext highlighter-rouge">-Infinity</code> (负无穷)，正数则会被转换成 <code class="language-plaintext highlighter-rouge">Infinity</code> (正无穷)，<code class="language-plaintext highlighter-rouge">Infinity</code> 不能够参与计算；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">Number.NEGATIVE_INFINITY</code> 和 <code class="language-plaintext highlighter-rouge">Number.POSITIVE_INFINITY</code> 分别保存 <code class="language-plaintext highlighter-rouge">-Infinity</code> 和 <code class="language-plaintext highlighter-rouge">Infinity</code>；</li>
+  <li>正数除以 0 返回 <code class="language-plaintext highlighter-rouge">Infinity</code>，负数除以 0 返回 <code class="language-plaintext highlighter-rouge">-Infinity</code>；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">isFinite()</code> 函数，检验参数是否位于最小与最大数值之间，返回 <code class="language-plaintext highlighter-rouge">true/false</code>；</li>
+  <li>监测和监控极大或极小数值的必要性；</li>
+</ul>
+
+<h2 id="nan--">
+<a class="anchor" href="#nan--" aria-hidden="true"><span class="octicon octicon-link"></span></a>NaN  <a id="nan"></a>
+</h2>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">NaN</code> 的特殊性，用于表示一个本来要返回数值的操作数未返回数值的情况；</li>
+  <li>任何涉及 <code class="language-plaintext highlighter-rouge">NaN</code> 的操作(例如 <code class="language-plaintext highlighter-rouge">NaN/10</code> )都会返回 <code class="language-plaintext highlighter-rouge">NaN</code>；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">NaN</code> 与任何值都不相等，包括 <code class="language-plaintext highlighter-rouge">NaN</code> 本身，<code class="language-plaintext highlighter-rouge">NaN == NaN; // false</code>；</li>
+  <li>0 除以 0 才会返回 <code class="language-plaintext highlighter-rouge">NaN</code>；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">typeof NaN;</code> 返回 <code class="language-plaintext highlighter-rouge">"number"</code>；</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">isNaN()</code> 函数，接受一个参数，确定这个参数是否“不是数值”。<code class="language-plaintext highlighter-rouge">isNaN()</code> 在接收到一个值之后，会将这个值转换为数值。某些不是数值的值会直接转换为数值，例如字符串 <code class="language-plaintext highlighter-rouge">"10"</code> 或 <code class="language-plaintext highlighter-rouge">Boolean</code> 值。而任何不能被转换为数值的值都会导致这个函数返回 <code class="language-plaintext highlighter-rouge">true</code>；</li>
+</ul>
+
+<h2 id="数值转换--">
+<a class="anchor" href="#%E6%95%B0%E5%80%BC%E8%BD%AC%E6%8D%A2--" aria-hidden="true"><span class="octicon octicon-link"></span></a>数值转换  <a id="conversions"></a>
+</h2>
+
+<ul>
+  <li>
+    <p><strong>Number()</strong>，用于任何数据类型，一元加操作符的操作与 <code class="language-plaintext highlighter-rouge">Number()</code> 函数相同，转换规则如下：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">数据类型</th>
+          <th style="text-align: left">Number()结果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center"><strong>Boolean</strong></td>
+          <td style="text-align: left">0 或 1</td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><strong>Null</strong></td>
+          <td style="text-align: left">0</td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><strong>Undefined</strong></td>
+          <td style="text-align: left">NaN</td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><strong>Number</strong></td>
+          <td style="text-align: left">简单的传入和返回</td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><strong>String</strong></td>
+          <td style="text-align: left">空字符串，则将其转换为 0； 只包含数字，则将其转换为十进制数值，忽略前导0； 包含有效的浮点格式，则转换为对应的浮点数值； 包含有效的十六进制格式，则转换为十进制整 数值； 包含除上述格式之外的字符，则转换为 NaN</td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><strong>Object</strong></td>
+          <td style="text-align: left">调用 <code class="language-plaintext highlighter-rouge">valueOf()</code> 方法，依照前面的规则转换返回的值。如果转换的结果是 NaN，则调用 <code class="language-plaintext highlighter-rouge">toString()</code> 方法，然后再次依照前面的规则转换返回的字符串值</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">Number</span><span class="p">({});</span> <span class="c1">// NaN</span>
+<span class="nb">Number</span><span class="p">([]);</span> <span class="c1">// 0</span>
+<span class="nb">Number</span><span class="p">([</span><span class="mi">2</span><span class="p">]);</span> <span class="c1">// 2</span>
+<span class="nb">Number</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]);</span> <span class="c1">// NaN</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>parseInt()</strong>，string =&gt; number(整数)，会忽略前面的空直至找到第一个非空格字符，<code class="language-plaintext highlighter-rouge">Number()</code> 函数在转换字符串时比较复杂而且不够合理，因此在处理整数的时候更常用的是 <code class="language-plaintext highlighter-rouge">parseInt()</code> 函数，转换规则如下：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">数据类型</th>
+          <th style="text-align: left">parseInt()结果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center"><strong>String</strong></td>
+          <td style="text-align: left">空字符串，则将其转换为 NaN； 第一个字符不是数字字符或者负号，转换为 NaN； 如果第一个字符是数字字符，会继续向后解析直到结束或遇见非数字字符 以”0x”开头且后跟数字字符，就会将其当作一个十六进制整数； 以”0”开头且后跟数字字符，则会将其当作一个八进制数；</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">1234blue</span><span class="dl">"</span><span class="p">);</span>  <span class="c1">// 1234</span>
+<span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">""</span><span class="p">);</span>  <span class="c1">// NaN</span>
+<span class="kd">var</span> <span class="nx">num3</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">0xA</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 10(十六进制数)</span>
+<span class="kd">var</span> <span class="nx">num4</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="mf">22.5</span><span class="p">);</span> <span class="c1">// 22</span>
+<span class="kd">var</span> <span class="nx">num5</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">070</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 56(八进制数)</span>
+<span class="kd">var</span> <span class="nx">num6</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">70</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 70(十进制数) </span>
+<span class="kd">var</span> <span class="nx">num7</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">0xf</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 15(十六进制数)</span>
+
+<span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">10</span><span class="dl">"</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">//2 (按二进制解析) </span>
+<span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">10</span><span class="dl">"</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span> <span class="c1">//8 (按八进制解析)</span>
+<span class="kd">var</span> <span class="nx">num3</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">10</span><span class="dl">"</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="c1">//10 (按十进制解析)</span>
+<span class="kd">var</span> <span class="nx">num4</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">"</span><span class="s2">10</span><span class="dl">"</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span> <span class="c1">//16 (按十六进制解析)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>parseFloat()</strong>，string =&gt; number(浮点数)，与 <code class="language-plaintext highlighter-rouge">parseInt()</code> 函数类似，但只解析十进制值，规则如下：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">数据类型</th>
+          <th style="text-align: left">parseInt()结果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center"><strong>String</strong></td>
+          <td style="text-align: left">空字符串，则将其转换为 NaN； 第一个字符不是数字字符或者负号，转换为 NaN； 如果第一个字符是数字字符，会继续向后解析直到结束或遇见非数字字符 十六进制格式的字符串则始终会被转换成 0； 如果字符串包含的是一个可解析为整数的数<code class="language-plaintext highlighter-rouge">parseFloat()</code> 会返回整数；</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/datatype/boolean.html" class="navigation navigation-prev" aria-label="Previous page: Boolean"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/datatype/string.html" class="navigation navigation-next" aria-label="Next page: String"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

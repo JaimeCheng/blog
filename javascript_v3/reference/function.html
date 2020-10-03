@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>Function - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    Function - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#function">Function</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#创建函数--">创建函数  </a></li>
+<li class="toc-entry toc-h2"><a href="#函数返回值--">函数返回值  </a></li>
+<li class="toc-entry toc-h2"><a href="#函数声明--">函数声明  </a></li>
+<li class="toc-entry toc-h2"><a href="#函数表达式--">函数表达式  </a></li>
+<li class="toc-entry toc-h2"><a href="#匿名函数--">匿名函数  </a></li>
+<li class="toc-entry toc-h2"><a href="#立即执行函数--">立即执行函数  </a></li>
+<li class="toc-entry toc-h2"><a href="#作为值的函数--">作为值的函数  </a></li>
+<li class="toc-entry toc-h2"><a href="#函数内部属性--">函数内部属性  </a></li>
+<li class="toc-entry toc-h2"><a href="#函数属性和方法--">函数属性和方法  </a></li>
+<li class="toc-entry toc-h2"><a href="#递归--">递归  </a></li>
+<li class="toc-entry toc-h2"><a href="#闭包-">闭包 </a></li>
+</ul>
+</li>
+</ul><h1 id="function">
+<a class="anchor" href="#function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Function</h1>
+
+<h2 id="创建函数--">
+<a class="anchor" href="#%E5%88%9B%E5%BB%BA%E5%87%BD%E6%95%B0--" aria-hidden="true"><span class="octicon octicon-link"></span></a>创建函数  <a id="create"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>函数实际上是一个对象，每个函数都是Function类型的实例，与其他引用类型一样具有属性和方法，函数名实际上也是一个指向函数的指针；</p>
+  </li>
+  <li>
+    <p>函数的名字仅仅是一个包含指针的变量而已；</p>
+  </li>
+  <li>
+    <p>重复声明直接覆盖（没有函数重载）,下例在创建第二个函数时，实际上覆盖了引用第一个函数的变量 <code class="language-plaintext highlighter-rouge">add</code>；</p>
+  </li>
+  <li>
+    <p>定义函数还可以使用 <code class="language-plaintext highlighter-rouge">var sum = new Function(num1, num2);</code> 不推荐因为会导致解析两次代码，但便于理解“函数是对象，函数名是指针”，也就是说一个函数可能有多个名字；</p>
+
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span><span class="o">+</span><span class="mi">100</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">add</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span><span class="o">+</span><span class="mi">200</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="c1">// 300</span>
+<span class="c1">// 以上代码等同于</span>
+<span class="kd">var</span> <span class="nx">add</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span><span class="o">+</span><span class="mi">100</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">add</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span><span class="o">+</span><span class="mi">200</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="函数返回值--">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC--" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数返回值  <a id="return"></a>
+</h2>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">return</code> 关键字；</li>
+  <li>实际上，未指定返回值的函数返回的是一个特殊的 <code class="language-plaintext highlighter-rouge">undefined</code> 值；</li>
+</ul>
+
+<h2 id="函数声明--">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E--" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数声明  <a id="declaration "></a>
+</h2>
+
+<ul>
+  <li>有声明提升，即使遇见 <code class="language-plaintext highlighter-rouge">return</code> 也不例外；</li>
+  <li>
+    <p>实际上，解析器在向执行环境中加载数据时，对函数声明和函数表达式并非一视同仁。解析器会率先读取函数声明（声明提升），并使其在执行任何代码之前可用（可以访问）；</p>
+
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">fnAdd</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nx">fnAdd</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+  <span class="nx">F</span><span class="p">();</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
+  <span class="k">return</span><span class="p">;</span>
+  <span class="kd">function</span> <span class="nx">F</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">//</span>
+<span class="kd">function</span> <span class="nx">F</span><span class="p">(){</span>
+  <span class="nx">A</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+  <span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span> <span class="p">}</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">A</span><span class="p">);</span>	<span class="c1">//5</span>
+<span class="p">}</span>
+<span class="nx">F</span><span class="p">();</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="函数表达式--">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数表达式  <a id="expression"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>函数表达式与其他表达式一样，使用前必须先赋值；所以不像函数声明那样有函数提升；</p>
+
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">fnAdd</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">};</span> <span class="c1">// 表达式函数像声明变量一样具有这个分号</span>
+<span class="nx">fnAdd</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="匿名函数--">
+<a class="anchor" href="#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0--" aria-hidden="true"><span class="octicon octicon-link"></span></a>匿名函数  <a id="anonymous"></a>
+</h2>
+
+<ul>
+  <li>基本格式： <code class="language-plaintext highlighter-rouge">function(){}</code> 即 <code class="language-plaintext highlighter-rouge">function</code> 关键字后没有标识符，也叫拉姆达函数；</li>
+  <li>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 不要这样做，不同浏览器修正方法不一致，这种方式很危险</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hi</span><span class="dl">'</span><span class="p">)</span> <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Yo</span><span class="dl">'</span><span class="p">)</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// 应使用函数表达式</span>
+<span class="kd">var</span> <span class="nx">sayHi</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">sayHi</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hi</span><span class="dl">'</span><span class="p">)</span> <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">sayHi</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Yo</span><span class="dl">'</span><span class="p">)</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="立即执行函数--">
+<a class="anchor" href="#%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0--" aria-hidden="true"><span class="octicon octicon-link"></span></a>立即执行函数  <a id="immediate-function"></a>
+</h2>
+
+<ul>
+  <li>创建并立即调用一个函数，即可以执行其中代码，又不会在内存中留下对该函数的引用；</li>
+  <li>
+<strong>var res = function a() {} ()</strong> ，（函数表达式）立即执行该函数，必须使用一个变量接收返回值（或直接console等号右边），否则不会执行；</li>
+  <li>
+<strong>(function a() {} )()</strong>，立即执行该函数，可以不用变量接收，函数外的括号可换成 <code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">-</code> <code class="language-plaintext highlighter-rouge">!</code>，例如<code class="language-plaintext highlighter-rouge">!function a(){}()</code>；</li>
+  <li>
+<strong>(function a() {} ())</strong>，等价上条；</li>
+  <li>
+<strong>(function () {})()，(function () {} ())</strong>，（匿名函数，函数表达式）立即执行该匿名函数，可以不用变量接收，同样可使用<code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">-</code> <code class="language-plaintext highlighter-rouge">!</code> ；</li>
+  <li>用立即执行函数的好处，通过定义一个匿名函数，创建了一个新的函数作用域，相当于创建了一个“私有”的命名空间，该命名空间的变量和方法，不会破坏污染全局的命名空间；</li>
+  <li>应用：**(function a(){}) **，会返回这个函数（不会执行），但是在括号外面无法调用该函数，需要一个变量接收该函数，<code class="language-plaintext highlighter-rouge">var fun = (function a(){})</code>,一般这个用在递归上见下文示例<a href="#recursion">递归函数万能实现方式</a>；</li>
+  <li>在匿名函数中定义的任何变量，都会在执行结束时销毁；</li>
+</ul>
+
+<h2 id="作为值的函数--">
+<a class="anchor" href="#%E4%BD%9C%E4%B8%BA%E5%80%BC%E7%9A%84%E5%87%BD%E6%95%B0--" aria-hidden="true"><span class="octicon octicon-link"></span></a>作为值的函数  <a id="asvalues"></a>
+</h2>
+
+<ul>
+  <li>函数名本身是变量，所以不仅可以把函数像参数一样传递，还可以将其作为另一函数的结果返回；</li>
+  <li>应用示例：
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[{</span><span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Zachary</span><span class="dl">"</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">28</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Nicholas</span><span class="dl">"</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">29</span><span class="p">}];</span>
+<span class="nx">data</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">createComparisonFunction</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">));</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//Nicholas</span>
+<span class="nx">data</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">createComparisonFunction</span><span class="p">(</span><span class="dl">"</span><span class="s2">age</span><span class="dl">"</span><span class="p">));</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span> <span class="c1">//Zachary</span>
+  
+<span class="kd">function</span> <span class="nx">createCompariFunction</span> <span class="p">(</span><span class="nx">propertyName</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">value1</span> <span class="o">=</span> <span class="nx">obj1</span><span class="p">[</span><span class="nx">propertyName</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">value2</span> <span class="o">=</span> <span class="nx">obj2</span><span class="p">[</span><span class="nx">propertyName</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value1</span> <span class="o">&lt;</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">value1</span> <span class="o">&gt;</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">turn</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="函数内部属性--">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7--" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数内部属性  <a id="internals"></a>
+</h2>
+
+<ul>
+  <li>函数内部(函数体内)有两个特殊对象 <code class="language-plaintext highlighter-rouge">arguments</code> 和 <code class="language-plaintext highlighter-rouge">this</code>；</li>
+  <li>函数体内部可通过 <code class="language-plaintext highlighter-rouge">arguments</code> 对象访问这个参数数组（非真正的Array）。非严格模式下，<code class="language-plaintext highlighter-rouge">arguments</code> 和命名参数的值保持同步，但内存空间独立，没有传递值的参数自动赋予 <code class="language-plaintext highlighter-rouge">undefined</code>。严格模式对 <code class="language-plaintext highlighter-rouge">arguments</code> 赋值会变得无效，重写 <code class="language-plaintext highlighter-rouge">arguments</code> 值会导致语法错误。ECMAScript中的所有参数传递的都是值，不可能通过引用传递参数。<code class="language-plaintext highlighter-rouge">arguments.length</code> 可获得参数长度，<a href="../content/chapter03.md#function">arguments详细说明</a>；</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">arguments</code> 有一个叫 <code class="language-plaintext highlighter-rouge">callee</code> 的属性其是一个指针，指向拥有这个 <code class="language-plaintext highlighter-rouge">arguments</code> 对象的函数，案例阶乘函数，常用于消除紧密耦合，严格模式下运行会导致错误；</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">factorial</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">num</span> <span class="o">*</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge">this</code>：引用的是函数据以执行的环境对象，也可以说是 <code class="language-plaintext highlighter-rouge">this</code> 值，当在网页的全局作用域中调用函数时，<code class="language-plaintext highlighter-rouge">this</code> 对象引用的就是 <code class="language-plaintext highlighter-rouge">window</code>；</li>
+  <li>ES5规范化了另一个函数对象的属性：<code class="language-plaintext highlighter-rouge">caller</code> 属性，该属性保存着调用当前函数的函数的引用，如果是在全局作用域中调用当前函数，它的值时 <code class="language-plaintext highlighter-rouge">null</code>；严格模式下，不能为该属性赋值，否则会导致错误；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">outer</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">inner</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">inner</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inner</span><span class="p">.</span><span class="nx">caller</span><span class="p">);</span> <span class="c1">// outer函数的代码</span>
+<span class="p">}</span>
+<span class="nx">outer</span><span class="p">();</span>
+</code></pre></div>    </div>
+  </li>
+  <li>ES5还定义了 <code class="language-plaintext highlighter-rouge">arguments.caller</code> 属性，在严格模式下访问会导致错误，非严格模式下始终是 <code class="language-plaintext highlighter-rouge">undefined</code> ，定义该属性是为了区分函数的 <code class="language-plaintext highlighter-rouge">caller</code> 属性；</li>
+</ul>
+
+<h2 id="函数属性和方法--">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95--" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数属性和方法  <a id="properties-methods"></a>
+</h2>
+
+<ul>
+  <li>
+<strong>length</strong>：表示函数希望接收命名参数的个数；</li>
+  <li>
+<strong>prototype</strong>：是保存他们所有示例方法的真正所在，在ES5中， <code class="language-plaintext highlighter-rouge">prototype</code>  是不可枚举的，使用 <code class="language-plaintext highlighter-rouge">for-in</code> 无法发现；</li>
+  <li>
+<strong>apply()</strong>：非继承而来的方法，设置函数体内 <code class="language-plaintext highlighter-rouge">this</code> 的值以扩充函数赖以运行的作用域，第一个参数是在其中运行的作用域，另一个是参数数组（Array实例 / arguments对象）；</li>
+  <li>
+<strong>call()</strong>：同上，区别仅在于接收参数的方式不同，第一个参数都是 <code class="language-plaintext highlighter-rouge">this</code> 值，变化的是其余参数都直接传递给函数，即必须明确的传入每一个参数；结果与 <code class="language-plaintext highlighter-rouge">apply</code> 没有不同；</li>
+  <li>
+<strong>bind()</strong>：ES5定义的一个方法，该方法会创建一个函数的实例，其 <code class="language-plaintext highlighter-rouge">this</code> 值会被绑定到传给 <code class="language-plaintext highlighter-rouge">bind()</code> 函数的值；
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span> <span class="na">color</span><span class="p">:</span> <span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span> <span class="p">};</span>
+  
+<span class="kd">function</span> <span class="nx">sum</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">color</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+  
+<span class="kd">function</span> <span class="nx">applySum</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">sum</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span> <span class="c1">// this-&gt;window,因为在全局作用域调用</span>
+  <span class="c1">// return sum.apply(o, [a, b]);</span>
+<span class="p">}</span>
+  
+<span class="kd">function</span> <span class="nx">callSum</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">sum</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+  
+<span class="kd">function</span> <span class="nx">sayColor</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">color</span><span class="p">);</span> <span class="p">}</span>
+<span class="nx">sayColor</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span> <span class="c1">// red</span>
+<span class="nx">sayColor</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nb">window</span><span class="p">);</span>  <span class="c1">// red</span>
+<span class="nx">sayColor</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">o</span><span class="p">);</span>  <span class="c1">// blue</span>
+  
+<span class="nx">sayColor</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="nx">o</span><span class="p">)();</span> <span class="c1">// blue 注意bind和以上两个区别</span>
+<span class="kd">var</span> <span class="nx">objSayColor</span> <span class="o">=</span> <span class="nx">sayColor</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="nx">o</span><span class="p">);</span> <span class="c1">// blue</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="递归--">
+<a class="anchor" href="#%E9%80%92%E5%BD%92--" aria-hidden="true"><span class="octicon octicon-link"></span></a>递归  <a id="recursion"></a>
+</h2>
+
+<ul>
+  <li>
+    <p>递归函数是在一个函数通过名字调用自身的情况下构成的，即函数自己调用自己；</p>
+  </li>
+  <li>
+    <p>递归必须有退出递归的条件否则成为死循环；</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// 经典阶乘函数</span>
+<span class="kd">function</span> <span class="nx">factorial</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="nx">num</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">num</span> <span class="o">*</span> <span class="nx">factorial</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+  
+<span class="kd">var</span> <span class="nx">another</span> <span class="o">=</span> <span class="nx">factorial</span><span class="p">;</span>
+<span class="nx">factorial</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">another</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// 出错 factorial is not a function</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>以上代码先把 <code class="language-plaintext highlighter-rouge">factorial()</code> 函数保存在变量 <code class="language-plaintext highlighter-rouge">another</code> 中，然后将 <code class="language-plaintext highlighter-rouge">factorial</code> 变量设置为 <code class="language-plaintext highlighter-rouge">null</code>，结果指向原始函数的引用只剩下一个。但在接下来调用<code class="language-plaintext highlighter-rouge">another()</code> 时，由于必须执行 <code class="language-plaintext highlighter-rouge">factorial()</code>，而 <code class="language-plaintext highlighter-rouge">factorial</code> 已经不再是函数，所以就会导致错误。在这种情况下，使用 <code class="language-plaintext highlighter-rouge">arguments.callee</code> 可以解决这个问题；</p>
+  </li>
+  <li>
+    <p>递归函数应始终使用 <code class="language-plaintext highlighter-rouge">arguments.callee</code> 来递归地调用自身，不是用函数名，因其可能发生变化；</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">factorial</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="nx">num</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">num</span> <span class="o">*</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">arguments.callee</code>  是指向正在执行的函数的指针，但严格模式下不可用；</p>
+  </li>
+  <li>
+    <p>严格模式或非严格模式下递归调用并降低耦合的方式如下：</p>
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">factroial</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="nx">f</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">num</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">})</span> <span class="c1">// 外部不能调用f()</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="闭包-">
+<a class="anchor" href="#%E9%97%AD%E5%8C%85-" aria-hidden="true"><span class="octicon octicon-link"></span></a>闭包 <a id="closures"></a>
+</h2>
+
+<ul>
+  <li>
+    <p><strong>闭包</strong>相关内容详见<a href="../content/chapter07.md#closures">第七章</a>；</p>
+  </li>
+  <li>闭包是能读取其他函数内部变量的函数。在一个函数内部定义了其他函数就创建了闭包，原理如下：
+    <ul>
+      <li>在后台执行环境中，闭包的作用域链包含着它自己的作用域、包含(外部)函数的作用域和全局作用域；</li>
+      <li>通常，函数的作用域及其所有变量都会在函数执行结束后被销毁；</li>
+      <li>但是，当函数返回一个闭包时，这个函数的作用域会一直在内存中保存到闭包不存在为止；</li>
+    </ul>
+  </li>
+  <li>使用闭包可以在JavaScript中模仿块级作用域（js本身没有这个概念），要点如下：
+    <ul>
+      <li>创建并立即调用一个函数，既可以执行其中代码，又不会在内存中留下对该函数的引用；</li>
+      <li>结果就是函数内部的所有变量都会被立即销毁——除非将某些变量赋值给了包含(外部)作用域的变量；</li>
+    </ul>
+  </li>
+  <li>闭包还可以在对象中创建私有变量，要点如下：
+    <ul>
+      <li>即使js中没有正式的私有对象属性的概念，但可以使用闭包实现公有方法，而通过公有方法可以访问在包含作用域中定义的变量；</li>
+      <li>有权访问私有变量的公有方法叫做特权方法；</li>
+      <li>可以使用构造函数模式、原型模式来实现自定义类型的特权方法，也可以使用模块模式、增强的模块模式来实现单例的特权方法；</li>
+    </ul>
+  </li>
+  <li>由于闭包会携带包含它的函数的作用域，因此比其他函数占用更多内存，建议在绝对必要时再考虑使用闭包；</li>
+</ul>
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/reference/object.html" class="navigation navigation-prev" aria-label="Previous page: Object"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/reference/date.html" class="navigation navigation-next" aria-label="Next page: Date"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

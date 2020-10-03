@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>函数 - JavaScript 高级程序设计 V3 | 柚子胖鸡_</title><meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+  <meta name="keywords" content="JaimeCheng, 静态博客, Github Page, Jekyll">
+  <meta name="description" content="函数相关练习，递归、闭包、作用域链...，题目持续补充，递归题目有点多因为本人递归太差了···"><link rel="stylesheet" href="/assets/main.css?v=0.2.5" />
+<link rel="stylesheet" href="/assets/my.css" />
+<script src="/assets/main.js?v=0.2.5" defer></script><link rel="stylesheet" href="/assets/css/tomorrow.css" />
+<script src="/assets/js/highlight.js"></script></head>
+<body class="body-chapter">
+    <div class="book__wrapper sidebar-right" id="bookMain"><div class="book-summary" id="bookSummary">
+  <nav role="navigation">
+    <ul class="summary">
+      <li class="chapter ">
+        <a href="/javascript_v3/" class="custom-link">JavaScript 高级程序设计 V3</a>
+      </li>
+      <li class="divider"></li><li class="chapter "><a href="/javascript_v3/README.html">JavaScript 高级程序设计</a></li><li class="chapter "><a href="/javascript_v3/content/README.html">章节内容</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/content/chapter01.html">1. JavaScript 简介</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter02.html">2. 在 HTML 中使用 JavaScript</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter03.html">3. JavaScript 基本概念</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter04.html">4. 变量、作用域和内存问题</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter05.html">5. 引用类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter06.html">6. 面向对象的程序设计</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter07.html">7. 函数表达式</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter08.html">8. BOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter09.html">9. 客户端检测</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter10.html">10. DOM</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter11.html">11. DOM 扩展</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter12.html">12. DOM2 和 DOM3</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter13.html">13. 事件</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter14.html">14. 表单脚本</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter15.html">15. 使用 Canvas 绘图</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter16.html">16. HTML5 脚本编程</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter17.html">17. 错误处理与调试</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter18.html">18.  JavaScript 与 XML</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter19.html">19. E4X</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter20.html">20. JSON</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter21.html">21. Ajax 与 Comet</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter22.html">22. 高级技巧</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter23.html">23. 离线应用与客户端存储</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter24.html">24. 最佳实践</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/content/chapter25.html">25. 新兴的 API</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/datatype/README.html">数据类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/datatype/undefined.html">Undefined</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/null.html">Null</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/boolean.html">Boolean</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/number.html">Number</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/string.html">String</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/datatype/object.html">Object</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/reference/README.html">引用类型</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/reference/array.html">Array</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/object.html">Object</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/function.html">Function</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/date.html">Date</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/regexp.html">RegExp</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/primitive-wrapper.html">基本包装类型</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/reference/singleton-built-in-object.html">单体内置对象</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/quiz/README.html">专项练习</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/quiz/operator.html">操作符</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/statement.html">语句</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/quiz/array.html">数组</a>
+          </li><li class="chapter active">
+            <a href="/javascript_v3/quiz/function.html">函数</a>
+          </li></ul></li><li class="chapter "><a href="/javascript_v3/appendix/README.html">附录</a><ul class="articles"><li class="chapter ">
+            <a href="/javascript_v3/appendix/operator-rules.html">操作符特殊规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/use-strict.html">严格模式规则</a>
+          </li><li class="chapter ">
+            <a href="/javascript_v3/appendix/compatibility.html">兼容性汇总</a>
+          </li></ul></li></ul>
+  </nav>
+</div>
+<div class="book__body">
+    <div class="body__inner"><a href="/" class="logo"><img src="/img/logo.png" class="logo_img"><h1>柚子胖鸡_</h1>
+</a>
+<!--<a href="/archive/" class="sidebar__toggler">
+  <span class="sidebar__toggler_top"></span>
+  <span class="sidebar__toggler_middle"></span>
+  <span class="sidebar__toggler_bottom"></span>
+</a> --><div class="book-header" role="navigation">
+    <a href="#" id="summaryToggler" class="summary__toggler">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+  <circle cx="5" cy="12" r="1"></circle>
+</svg>
+
+    </a>
+  <h1>
+    函数 - JavaScript 高级程序设计 V3
+  </h1>
+</div><main class="chapter__wrapper" tabindex="-1" role="main">
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#函数">函数</a></li>
+</ul><h1 id="函数">
+<a class="anchor" href="#%E5%87%BD%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>函数</h1>
+
+<ol>
+  <li>下列代码的运行结果？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">i</span><span class="o">++</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">;</span>
+<span class="p">})(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列两段代码的运行结果？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>	
+<span class="nx">A</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>请使用一条语句对数组求和,要求使用递归。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">];</span>
+<span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">args</span><span class="p">){</span>	
+  <span class="c1">//请在这里填上一条语句，完成对数组求和，要求使用递归。</span>
+<span class="p">}</span>
+<span class="nx">sum</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>这段代码输出什么？如果想让这段代码输出0123456789，应该怎么修改？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的运行结果？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">A</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="nx">B</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">n</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="p">}</span>
+  <span class="kd">function</span> <span class="nx">C</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">C</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">D</span> <span class="o">=</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">D</span><span class="p">();</span> 		<span class="c1">//结果是什么，为什么？</span>
+<span class="nx">B</span><span class="p">();</span>
+<span class="nx">D</span><span class="p">();</span> 		<span class="c1">//结果是什么，为什么？</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的运行结果？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span><span class="mi">5</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">F</span><span class="p">(){</span>
+  <span class="nx">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">return</span><span class="p">;</span>
+  <span class="kd">function</span> <span class="nx">a</span><span class="p">(){}</span>
+<span class="p">}</span>
+<span class="nx">F</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的结果是什么？为什么？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">a</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">a</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的输出结果？
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">rs</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">rs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span>  <span class="kd">function</span><span class="p">(){</span> <span class="k">return</span> <span class="nx">i</span><span class="p">;}</span>  <span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">rs</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">rst</span> <span class="o">=</span> <span class="nx">A</span><span class="p">()</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">rst</span><span class="p">[</span><span class="mi">0</span><span class="p">]());</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">rst</span><span class="p">[</span><span class="mi">1</span><span class="p">]());</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">rst</span><span class="p">[</span><span class="mi">2</span><span class="p">]());</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">rst</span><span class="p">[</span><span class="mi">3</span><span class="p">]());</span>	
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>用递归函数计算 n! 。<br></p>
+  </li>
+  <li>
+    <p>用递归函数求幂。<br></p>
+  </li>
+  <li>
+    <p>用递归求1-100的和。<br></p>
+  </li>
+  <li>
+    <p>求 1,3,5,7,9,…第n项的结果和前n项和,序号从0开始。<br></p>
+  </li>
+  <li>
+    <p>求 2,4,6,8,10… 第n项与前n项之和。<br></p>
+  </li>
+  <li>
+    <p>Fibonacci数列(斐波那契数列) 1, 1, 2, 3, 5, 8, 13, 21, 34, 55… 第n项。<br></p>
+  </li>
+  <li>
+    <p>数列 1,1,2,4,7,11,16…求第 n 项,求前n项和。<br></p>
+  </li>
+  <li>
+    <p>什么是闭包？闭包的实现方式是,请举一个例子？<br></p>
+  </li>
+  <li>使用递归输出以下结构（目录树）。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">Desktop</span>
+<span class="err">├─</span><span class="p">.</span><span class="nx">DS_Store</span>
+<span class="err">├─</span><span class="p">.</span><span class="nx">localized</span>
+<span class="err">├─</span><span class="nx">dir1</span>
+<span class="o">|</span>  <span class="err">├─</span><span class="nx">file3</span>
+<span class="o">|</span>  <span class="o">|</span>  <span class="err">├─</span><span class="nx">file6</span>
+<span class="err">├─</span><span class="nx">dir2</span>
+<span class="o">|</span>  <span class="err">├─</span><span class="nx">file4</span>
+<span class="o">|</span>  <span class="err">├─</span><span class="nx">file5</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>猴子吃桃。第一天悟空吃掉桃子总数一半多一个，第二天又将剩下的桃子吃掉一半多一个，以后每天吃掉前一天剩下的一半多一个，到第n天准备吃的时候只剩下一个桃子。请算一下，桃子一共有多少个？ <br></p>
+  </li>
+  <li>
+    <p>用递归函数实现深拷贝。<br></p>
+  </li>
+  <li>
+    <p>使用递归实现 getElementsByClassName。<br></p>
+  </li>
+  <li>
+    <p>经典楼梯问题：一共10级楼梯，每次可以走一步或两步，求一共多少种走法？<br></p>
+  </li>
+  <li>
+    <p>细胞分裂问题：1个细胞，一个小时分裂一次，生命周期是3小时，求n小时后容器内，有多少细胞。<br></p>
+  </li>
+  <li>
+    <p>实现常见的排序算法。<br></p>
+  </li>
+  <li>下列代码的运行结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span> 
+  <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> 
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span> 
+<span class="p">}</span> 
+<span class="nx">A</span><span class="p">();</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的运行结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+ <span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span>
+  <span class="nx">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>	
+  <span class="kd">function</span> <span class="nx">B</span><span class="p">(){</span>
+     <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+   <span class="p">}</span>
+   <span class="nx">B</span><span class="p">();</span>
+   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="nx">A</span><span class="p">();</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的运行结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">2008</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">fnB</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">b</span><span class="p">);</span>
+  <span class="o">+</span><span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">b</span><span class="p">);}();</span>
+  <span class="kd">function</span> <span class="nx">fnB1</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">b</span><span class="p">);}</span>
+  <span class="nx">fnB1</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">oB</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">oB</span><span class="p">.</span><span class="nx">b</span> <span class="o">=</span> <span class="mi">2011</span><span class="p">;</span>
+<span class="nx">oB</span><span class="p">.</span><span class="nx">m</span> <span class="o">=</span> <span class="nx">fnB</span><span class="p">;</span>
+<span class="nx">oB</span><span class="p">.</span><span class="nx">m</span><span class="p">();</span>
+<span class="c1">// 函数中的子函数中的this默认指向window,在js中this没有传递性</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">2014</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">fnA</span><span class="p">(</span><span class="nx">fn</span><span class="p">){</span>
+  <span class="nx">fn</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">i</span><span class="p">:</span><span class="mi">2008</span><span class="p">,</span>
+  <span class="na">fnB</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">i</span><span class="p">);</span>
+    <span class="p">},</span>
+  <span class="na">fnC</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">fnB</span><span class="p">();</span>		
+    <span class="nx">fnA</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">fnB</span><span class="p">);</span>
+  <span class="p">}</span>		
+<span class="p">}</span>
+<span class="nx">o</span><span class="p">.</span><span class="nx">fnC</span><span class="p">();</span>
+<span class="c1">// 作用域</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码的输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">全局的a</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">obj</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">);</span> 
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">fn</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>	 
+  <span class="p">}</span> 
+<span class="p">}</span> 
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">obj</span><span class="p">();</span> 
+<span class="nx">o</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">局部的a</span><span class="dl">"</span>
+<span class="nx">o</span><span class="p">.</span><span class="nx">fn</span><span class="p">();</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">2000</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">oA</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">i</span><span class="p">:</span><span class="mi">2008</span><span class="p">,</span>
+  <span class="na">fnA</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>	<span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">i</span><span class="p">);</span>	<span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">oB</span> <span class="o">=</span> <span class="p">{</span>	<span class="na">i</span><span class="p">:</span><span class="mi">2010</span>	<span class="p">}</span>
+<span class="nx">oA</span><span class="p">.</span><span class="nx">fnA</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">oB</span><span class="p">);</span>  	<span class="c1">//输出？为什么？</span>
+<span class="nx">oA</span><span class="p">.</span><span class="nx">fnA</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>  	<span class="c1">//输出？为什么？</span>
+<span class="nx">oA</span><span class="p">.</span><span class="nx">fnA</span><span class="p">();</span>  		<span class="c1">//输出？为什么？</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>	
+  <span class="k">this</span><span class="p">.</span><span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span>	
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">B</span><span class="p">(){</span>	
+  <span class="nx">A</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]);</span>	
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">sum</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">course</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">PHP高级工程师班</span><span class="dl">"</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">school</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">动力学院</span><span class="dl">"</span>	
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">B</span><span class="p">(){</span>	
+  <span class="nx">A</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>	
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">school</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">course</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span> 
+  <span class="k">this</span><span class="p">.</span><span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">B</span><span class="p">(){</span> 
+  <span class="nx">A</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]);</span> 
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">sum</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>下列代码输出结果。
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">A</span><span class="p">(</span><span class="nx">arg</span><span class="p">){</span>	
+  <span class="k">this</span><span class="p">.</span><span class="nx">sum</span> <span class="o">=</span> <span class="nx">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="nx">arg</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>	
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">B</span><span class="p">(){</span>	
+  <span class="nx">A</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]);</span>	
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">sum</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+          </article>
+        </div><footer class="site-footer">
+  © 2020<a href="/">柚子胖鸡_</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+</main>
+    </div><a href="/javascript_v3/quiz/array.html" class="navigation navigation-prev" aria-label="Previous page: 数组"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M20 30 L8 16 20 2" />
+</svg>
+</a><a href="/javascript_v3/appendix/README.html" class="navigation navigation-next" aria-label="Next page: 附录"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M12 30 L24 16 12 2" />
+</svg>
+</a></div>
+</div><script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
