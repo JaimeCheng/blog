@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  .section-nav,
   .github-corner,
   .post__contact {
     display: none;
