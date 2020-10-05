@@ -1,0 +1,76 @@
+title: 柚子胖鸡_
+email: JaimeCheng@gmail.com
+author: JaimeCheng
+description: >- # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  JaimeCheng
+paginate: 20
+paginate_path: "page/:num"
+head_code: |
+  <meta name="baidu-site-verification" content="code-QQXB3LWw5E" />
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1d4b09c687aa7d9e66a6041d5b5f58f1";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      code: true
+      contact: false
+      keywords: JaimeCheng, 静态博客, Github Page, Jekyll
+      description: JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。
+  -
+    scope:
+      path: ""
+    values:
+      layout: "chapter"
+      toc: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+      code: true
+      contact: true
+      pages: books
+      description: JaimeCheng's Blog，记录前端笔记、生活杂事、读书随笔等。
+plugins:
+  - jekyll-feed
+  - jekyll-toc
+  - jekyll-paginate
+  - jekyll-books
+
+logo: /img/logo.png
+social:
+  github: JaimeCheng
+  weibo: JaimeCheng
+  gitee: JaimeCheng
+theme_setting:
+  blog_page: "index.html"
+  about_page: "about.md"
+  archive_page: "archive.md"
+  nav_pages:
+    - "index.html"
+    - "about.md"
+    - "archive.md"
+    # -
+    #   title: "红宝书"
+    #   url: "/red-book"
+    #   target: "_blank"
+  lang:
+    category_all: 全部
+    blog_title: Home
+    book_title: 文集
